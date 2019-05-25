@@ -27,6 +27,25 @@ a tag have href attribute - it is the location we ar linking to
 
 target="_blank" : open in new tab
 
+--alt attribbute of img tag: alternative text to appear incase image doesnt show up.
+
+unrodered list not numbered and each item is wrapped inside li tag.
+
+ordered list - ol tag
+
+
+Tables in html
+    use for tabular data
+
+thead tag for to display head
+tr for each row
+th for each heading value. ithent is only for tthe headinf
+tbody for content   
+then tr for table row
+later td for table data in each row
+
+
+
 
 
 
