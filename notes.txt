@@ -45,8 +45,40 @@ then tr for table row
 later td for table data in each row
 
 
+forms 
+
+forms r displayed on pasge usinh html and css
+bt they r processed using back end language.
+
+in forms there is 'action' attribute where v specify the file where our form to 
+be submitted. such as php file etc..
+all the inputs are submitted to the file specified in the action
 
 
+
+for attribute of label tag must match with the id of the input
+name attrbute of input is used on the server side. ie if want to grab the value 
+of input we need to use the value of name attribute.
+
+textarea tag is used instead of input tag to while creating an bio form or message box
+
+
+--select tag for dropdown menus
+
+--date type for date related data
+
+--number type for numbers
+
+
+--radio type for each radio buttons
+
+--checked attribute of input tag to preselect the radio button while page loads
+
+
+--selected attr ibute of option tag to preselect a value while page loads
+
+
+--placeholder attribute to initally place default value in the field.
 
 
 

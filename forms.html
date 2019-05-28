@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms and Inputs</title>
+</head>
+<body>
+    <form action="process.php"></form>
+    <!-- here v seprate our inputs into divisions using div tags -->
+    <div>
+        <!-- creates label for each inputs -->
+        <label for="name">Name</label><br>
+        <!-- both for and id attribute must have same value  -->
+        <input type="text" id="name" name="name" placeholder="Name">
+    </div>
+
+    <div>
+        <label for="Email">Email</label><br>
+        <input type="email" id="Email" name="email" placeholder="Enter an email">
+    </div>
+
+    <div>
+        <label for="msg">Message</label><br>
+        <!-- col and rows attrbutes specify horizontal  & vertical space of textarea -->
+        <textarea name="message" id="msg" cols="50" rows="10" placeholder="message goes here"></textarea>
+    </div>
+
+    <div>
+        <label for="sex">Sex</label><br>
+        <!-- select tag for dropdown menu -->
+        <select name="sex" id="sex">
+            <!-- option tag for each option -->
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others" selected>others</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="age">Age</label><br>
+        <!-- here type is number so w cannot type any letter in field excpet 'e'-->
+        <input type="number" name="age" id="age">
+    </div>
+    
+    <div>
+        <label for="date">Date of Birth</label><br>
+        <!-- create a date picker -->
+        <input type="date" name="date" id="date">
+    </div>
+
+    <div>
+        <label for="membership">Membership</label><br>
+        <!-- Just speicy text instead of label tag for each radio buttons -->
+        <input type="radio" name="membership" id="membership" value="simple" checked>
+        Simple
+        <input type="radio" name="membership" id="membership" value="standard">
+        Standard
+        <input type="radio" name="membership" id="membership" value="premium">
+        Premium
+        <input type="radio" name="membership" id="membership" value="Super">
+        Super
+    </div>
+    
+
+
+
+</body>
+</html>
