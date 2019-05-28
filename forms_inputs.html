@@ -7,8 +7,10 @@
     <title>Forms and Inputs</title>
 </head>
 <body>
-    <form action="process.php"></form>
+    <form action="process.php">
     <!-- here v seprate our inputs into divisions using div tags -->
+
+    <!-- text -->
     <div>
         <!-- creates label for each inputs -->
         <label for="name">Name</label><br>
@@ -16,17 +18,20 @@
         <input type="text" id="name" name="name" placeholder="Name">
     </div>
 
+    <!-- Email -->
     <div>
         <label for="Email">Email</label><br>
         <input type="email" id="Email" name="email" placeholder="Enter an email">
     </div>
 
+    <!-- textarea -->
     <div>
         <label for="msg">Message</label><br>
         <!-- col and rows attrbutes specify horizontal  & vertical space of textarea -->
         <textarea name="message" id="msg" cols="50" rows="10" placeholder="message goes here"></textarea>
     </div>
 
+    <!-- Select -->
     <div>
         <label for="sex">Sex</label><br>
         <!-- select tag for dropdown menu -->
@@ -38,21 +43,25 @@
         </select>
     </div>
 
+    <!-- Number -->
     <div>
         <label for="age">Age</label><br>
         <!-- here type is number so w cannot type any letter in field excpet 'e'-->
         <input type="number" name="age" id="age">
     </div>
     
+    <!-- Date -->
     <div>
         <label for="date">Date of Birth</label><br>
         <!-- create a date picker -->
         <input type="date" name="date" id="date">
     </div>
 
+    <!-- Radio Buttons -->
     <div>
         <label for="membership">Membership</label><br>
-        <!-- Just speicy text instead of label tag for each radio buttons -->
+        <!-- here all the name attribute shud be same for radio type -->
+        <!-- values attribute is sent o the server while clicking submit -->
         <input type="radio" name="membership" id="membership" value="simple" checked>
         Simple
         <input type="radio" name="membership" id="membership" value="standard">
@@ -62,9 +71,27 @@
         <input type="radio" name="membership" id="membership" value="Super">
         Super
     </div>
+
+    <!-- Checkbox-->
+    <div>
+        <label for="hobbies">Hobbies</label><br>
+        <!-- values attribute is sent o the server while clicking submit -->
+        <input type="checkbox" name="hobbies" id="hobbies" value="movies">
+        Watching movies
+        <input type="checkbox" name="hobbies" id="hobbies" value="puzzles">
+        Solving Puzzles
+        <input type="checkbox" name="hobbies" id="hobbies" value="coding">
+        Coding
+    </div>
+
+    <!--Submit & Reset Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
     
-
-
-
 </body>
 </html>
+
+    
+  
+

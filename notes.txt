@@ -57,7 +57,7 @@ all the inputs are submitted to the file specified in the action
 
 
 for attribute of label tag must match with the id of the input
-name attrbute of input is used on the server side. ie if want to grab the value 
+name attrbute of input tag is used on the server side. ie if want to grab the value 
 of input we need to use the value of name attribute.
 
 textarea tag is used instead of input tag to while creating an bio form or message box
@@ -72,6 +72,23 @@ textarea tag is used instead of input tag to while creating an bio form or messa
 
 --radio type for each radio buttons
 
+Radio buttons are normally presented in radio groups (
+    a collection of radio buttons describing a set of related options). 
+    Only one radio button in a group can be selected at the same time.
+
+Note: The radio group must have share the same name 
+(the value of the name attribute) to be treated as a group. Once the radio group
+ is created, selecting any radio button in that group automatically deselects any 
+ other selected radio button in the same group. You can have as many radio groups on
+  a page as you want, as long as each group has its own name.
+
+Note: The value attribute defines the unique value associated with each radio button. 
+The value is not shown to the user, but is the value that is sent to the server on 
+"submit" to identify which radio button that was selected.
+
+
+
+
 --checked attribute of input tag to preselect the radio button while page loads
 
 
@@ -80,6 +97,8 @@ textarea tag is used instead of input tag to while creating an bio form or messa
 
 --placeholder attribute to initally place default value in the field.
 
+
+shortcut -- ctrl + d to choose next simlar word.
 
 
 
