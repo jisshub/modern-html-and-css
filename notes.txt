@@ -99,7 +99,21 @@ The value is not shown to the user, but is the value that is sent to the server 
 
 
 shortcut -- ctrl + d to choose next simlar word.
+    
 
+
+
+
+
+block elevel elements takes full span of the page
+and if we put any tags after it will be in next line.
+eg: p and div 
+
+inline elements elements does not take full page.
+it onlytakes wha its needed.
+so if we any thing after inline elements it will shown up right of the inline element
+dot take new line
+eg: link element <a>
 
 
 
