@@ -116,6 +116,34 @@ dot take new line
 eg: link element <a>
 
 
+--id and classes
+always use an id at Once. ie it is individual to a particular section
+class can be repeated for different sections in the page.
 
+for eg: if want to style both the contact and about section of our page 
+in those case it is better to use classes, so v cab specify same class name for both.
+and style it  using that common class.
+
+
+--span and div elements
+difference is span is inline and div is a block level element.
+
+
+
+entities
+--non breaking space 
+if wwnt to give saome whitspaces after the text 
+if v manually do it id doesnt  reflect  the pageso use 
+entity called &nbsp;
+
+
+semantic tags
+
+main -
+section - about , services , contact etc..
+article tag: blog post,article post -comes inisde section tag
+
+aside tag: side bar contents, eg: ads, or contents that is not really tht main focus
+of the page.
 
 
