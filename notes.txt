@@ -147,3 +147,32 @@ aside tag: side bar contents, eg: ads, or contents that is not really tht main f
 of the page.
 
 
+
+CSS BASICS
+
+--inline , internal nad external css
+
+--external css i the best method 
+so for external css to work, need to specify the link tag in html specifying the path of
+external css file.
+
+<link rel="stylesheet" href="css/style.css">
+--here rel tells type of link here it is stylesheet,
+--href is the location.
+
+. is for classes and # is for id's.
+
+--Elements and tags
+
+h2 is an element
+<h2> is tag.
+p is a paragraph
+<p> is a tag.
+
+i.e. elements with in angle brackets r called tags.
+
+
+
+
+
+

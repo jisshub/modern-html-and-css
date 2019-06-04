@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css selectors</title>
+</head>
+<style>
+    /* USING SELECTORS */
+
+    /* styling entre body of the page */
+    body
+    {
+        background-color: black;    
+    }
+    
+    /* . is for classes */
+    .primary-heading{
+        color: darkblue;
+        }
+    /* # is for id's */
+    #welcome
+    {
+        background-color:darkgrey;
+
+    }
+    /* multiple selectors to style multiple sections */
+    #welcome,#about
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* Nested Selectors */
+    /* need to style a paragraph for a specific section */
+    /* here specify the id along wit p element */
+    /* thus it styles paragraph of element with that id */
+    #welcome p{
+        font-size: xx-large;
+    }
+    #about
+    {
+        color: aliceblue;
+    }
+  
+
+</style>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Perferendis nam architecto, <br> minus illum, odio ipsam aliquam voluptate quis pariatur consequuntur ratione <br> voluptatem molestiae modi beatae accusamus, consectetur ipsa. Quam, tempora.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem distinctio nulla exercitationem fuga itaque ipsum <br> ratione ea sequi amet a.</p>
+    </div>
+    
+</body>
+</html>
