@@ -45,7 +45,7 @@ then tr for table row
 later td for table data in each row
 
 
-forms 
+--forms 
 
 forms r displayed on pasge usinh html and css
 bt they r processed using back end language.
@@ -170,6 +170,74 @@ p is a paragraph
 <p> is a tag.
 
 i.e. elements with in angle brackets r called tags.
+
+
+--fonts in css
+
+fonts are deafult sans serif.
+
+EG:
+font-family: Arial, Helvetica, sans-serif;
+        /* it looks for Arial if not found then Helvetica if not, then sans serif */
+font-size is deafult 16 px for page
+line-height property means line spacing ie space b/w each lines.
+and line-height value is specified em units.
+--em units:
+Relative to the font-size of the element (2em means 2 times the size of the current font)
+
+
+--Color property in css
+
+rgb(0,0,0) - black since no value specified fo red green and blue.
+color: rgb(0, 0, 255) - gives a blue color since value for blue is set to 255 and all other r empyt.
+color: rgb(255, 255, 255) - gives white.
+
+--colors using hexadecimals
+starts with # symbol follwed by 3 or 6 digits or letters.
+numbers are from 0 to 9.
+and letters from A to F.
+here each two combination of letters or digits represent a particular color
+and each combination is red ,green,blue.
+eg:
+    color: #000000
+    here it is black since all combination is zero
+    or
+    color:#000
+
+    if v want  blue color,
+    color: #0000ff
+
+    if want white
+    color: #ffffff
+    or 
+    color:#fff
+
+for more colors refer;
+    https://www.color-hex.com/
+    https://htmlcolorcodes.com/
+
+
+--backgrounds
+
+to have a transparent bgd, use png images.
+
+--borders:
+border-width: 3px;
+border-style: solid;
+border-color: brown;
+
+above is the 3 main properties for styling border of an element.
+note: solid is common value for border-style property.
+
+--shortcut to style border instead of above metho is to use border property
+eg:
+    border: 3px solid brown;
+
+works same as above;
+can br given any order.
+
+
+
 
 
 
