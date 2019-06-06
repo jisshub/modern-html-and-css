@@ -111,9 +111,9 @@ eg: p and div
 
 inline elements elements does not take full page.
 it onlytakes wha its needed.
-so if we any thing after inline elements it will shown up right of the inline element
-dot take new line
-eg: link element <a>
+so if we write anything after inline elements it will shown up right of the inline element
+dont take new line
+eg: link element 'a'
 
 
 --id and classes
@@ -236,10 +236,13 @@ eg:
 works same as above;
 can br given any order.
 
+can also give border-top, border-left ...
 
+border-radius property makes border round shape
+eg: border-radius: 10px;
 
-
-
+--background-image property in css
+to set the background image forour page.
 
 
 
