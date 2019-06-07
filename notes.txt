@@ -286,7 +286,47 @@ Margin and Padding
 
 margn is outside the border or outsie the element
 while pading is inside the element or inside the border.
+    eg:
+        padding: 20px
+            gives padding of 20px on all sides of the element.
+        margin: 20px
+            gives margin of 20px arouncd the border.
+
+-- if v add the padding and width for a box.
+    here both the padding pixel and width will be added to give the box size.
+    not just width , both will be added.
+    eg:
+    width: 500px;
+    padding: 100px;
+    now the box size will be sum of both width and padding values.ie 600width box
+so usually v want to keep the right width for the box.
+and then give the padding.
+to do that,
+        set box-sizing property to border-box;
+
+thus v have 500 width box and with in thebox there is 120 px of padding.
+
+
+--margin on all sides:
+    margin:20px 
+        sets margin of 20 px arond the border.
     
+tip: margin outside , padding inside
+
+--propeprty declared above will be overwritten by the same property 
+declared below.
+eg:
+1.
+    padding: 20px;
+
+2.
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+here 2nd  will overwrite the firsst.
+
 
 
 

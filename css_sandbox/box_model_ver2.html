@@ -14,13 +14,54 @@
     {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
 
     }
     .box
     {
-        background: #bb96bb;
+        background: #b3c9e2;
         border: 5px solid gray;
-        margin: 30px;
+        width: 500px;
+        /* padding-space around the element */
+        /* padding an all sides */
+        padding: 20px;
+
+        /* padding per side */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        /* padding shorthand= top right bottom left */
+        padding: 10px 20px 10px 20px;
+
+        /* above top and bottom also left and right have same pixel, so can write it as */
+        /* padding shorthand=top/bottom left/right */
+        padding: 10px 20px;
+
+
+        /* margin-space around the border */
+        /* margin on all sides */
+        margin: 50px;
+
+        /* margin per side */
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+
+        /* margin shorthand=top right bottom left */
+        margin: 20px 40px 20px 40px;
+
+        /* margin shorthand=top/bottom left/right */
+        margin: 20px 40px;
+
+
+
+        border-radius: 10px;
+    }
+    .box p{
+        margin-top: 10px;
     }
     
 </style>
