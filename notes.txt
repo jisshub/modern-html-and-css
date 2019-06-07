@@ -279,7 +279,14 @@ else,
 to show the whole image.
 set value cover for background-size.
 
+--in dev tools,
+    divs are default deisplayed as block since it is a block level element.
 
+Margin and Padding
+
+margn is outside the border or outsie the element
+while pading is inside the element or inside the border.
+    
 
 
 
