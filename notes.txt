@@ -245,5 +245,41 @@ eg: border-radius: 10px;
 to set the background image forour page.
 
 
+--background-repeat property
+
+The background-repeat property sets if/how a background image will be repeated.
+
+By default, a background-image is repeated both vertically and horizontally.
+
+Tip: The background image is placed according to the background-position property.
+ If no background-position is specified, the image is always placed at the element's 
+ top left corner.
+ for eg: if background-image is given in div, the image is set at top left cornet of 
+ div element.
+
+ eg:
+    background-repeat: no-repeat
+        image not repeated 
+    repeat-x: repeated along x axis
+    repeat-y
+    
+--background-position property
+positions the bg image in the page.
+eg:
+    background-position: top right;
+    image will be positioned i the top rght corner of the page.
+
+--background-attachment 
+if set to fixed, dont sccroll with the page.i.e. fixed.
+else,
+    it scrolls with the page.
+
+
+--background-size
+to show the whole image.
+set value cover for background-size.
+
+
+
 
 
