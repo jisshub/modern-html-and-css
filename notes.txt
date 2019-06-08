@@ -328,5 +328,51 @@ eg:
 here 2nd  will overwrite the firsst.
 
 
+--floats and alignment
+
+when we initiallt make  webage it isaligned towards left.
+to make it center, just 
+    create a container class
+    and wrap all the contents  of page inside it.
+    later style the class by setting a width we want for the container and margin to auto.
+which automatically sets margin to left and right of container.
+
+to set margin for top and bottom just give the pxels v need at top and bottom.
+
+--if v just set width and v miinimze the window size .
+we gonna miss the contents so to avoid that v need to set
+max-with property instead of width.
+
+so if v minimize the page, all contents will be aligned according to it,
+eg: using phones, else we need to use scrollbar thru both sides to view the contents.
+
+always usse max-width for the containers;
+
+
+
+--text align property in css
+values r left, right ,center and justify
+deafult one is justify.
+
+floating box left and right
+float: left;
+float: right;
+
+float the box to the left of window and 
+right of window.
+always specifu width of box in percentages
+and also set box-sizing property 
+to border-box.
+
+and if added another box under it it would
+be behind both floated boxes.
+to avoid that align it properly
+clear the both float using clr class.
+syntax:
+.clr{
+    clear:both;
+}
+
+and wrap the new box in clr class.
 
 

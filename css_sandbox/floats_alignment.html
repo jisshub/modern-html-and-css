@@ -7,13 +7,56 @@
     <title>Floats & Alignments</title>
 </head>
 <style>
+*
+{
+    box-sizing: border-box;
+}
+.clr
+{
+    clear: both;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    font-style: italic;   
+}
 .container
 {
     /* width: 960px; */
+    /* align contents to fit the screen */
     max-width: 960px;
     margin: 50px auto;
 }
+.box
+{
+    border: 3px solid #977a9c;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #b8bdc767;
+}
+.box p{
+    /* text align property to align the text in  an element */
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+}
 
+/* float the box to left of window */
+#box-2
+{
+    float: left;
+    width: 50%;
+    /* floa */
+}
+#box-3
+{
+    float: right;
+    width: 45%;
+    margin-bottom: 30px;
+    /* padding-bottom: 2px; */
+}
 </style>
 <body>
     <div class="container">
@@ -28,6 +71,12 @@
         <div id="box-3" class="box">
             <h3>Box-Three</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro libero quam facere nam, repudiandae fugiat harum cupiditate culpa soluta nostrum, fugit repellat voluptatibus aspernatur maiores officiis vel. Maiores, suscipit!</p>
+        </div>
+        <div class="clr">
+        <div id="box-4" class="box">
+            <h3>Box-Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro libero quam facere nam, repudiandae fugiat harum cupiditate culpa soluta nostrum, fugit repellat voluptatibus aspernatur maiores officiis vel. Maiores, suscipit!</p>
+            </div>
         </div>
     </div>
 </body>
