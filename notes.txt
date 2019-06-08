@@ -376,3 +376,14 @@ syntax:
 and wrap the new box in clr class.
 
 
+-- when v hover over the link, to change it default style 
+use pseudoselector 'hover' on 'a' selector
+eg:
+     a:hover{
+        color: chartreuse;
+        text-decoration: underline;
+    }
+so when hover over it, color changes and underline for the link.
+
+note: whenever v want style both button and link v add a class btn  for both.
+

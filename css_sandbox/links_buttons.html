@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Links & Buttons</title>
+</head>
+<style>
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+   a
+    {
+        color: f#360606e0;
+        /* remove the underline, use text-decaoration & set to none */
+        text-decoration: none;
+    }
+    /* when v hover over the link, to change it default style */
+    /* use pseudoselector 'hover' on 'a' selector*/
+    a:hover{
+        color: chartreuse;
+        text-decoration: underline;
+    }
+    .btn
+    {
+        background: #4c6ac0;
+        color: #ffffff;
+        /* remove btn borders */
+        border: none;
+        font-size: 20px;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
+    /* to add a pointer for the button when v hover over it*/
+    /* syntac: element.classname */
+    button.btn
+    {
+        cursor: pointer;
+    }
+
+    /* btn hover, changes to purple bg while hover*/
+    .btn:hover
+    {
+        background: purple;
+    }
+    button.btn:hover{
+        color: cyan;
+    }
+
+
+</style>
+<body>
+    <br><br>
+    <a href="#" class="btn"> Click Here</a>
+    <br><br>
+    <button class="btn">Submit</button>
+</body>
+</html>
