@@ -387,3 +387,5 @@ so when hover over it, color changes and underline for the link.
 
 note: whenever v want style both button and link v add a class btn  for both.
 
+--removing bullets points from lists.
+set list-style property to none.
