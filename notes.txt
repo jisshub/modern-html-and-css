@@ -389,3 +389,18 @@ note: whenever v want style both button and link v add a class btn  for both.
 
 --removing bullets points from lists.
 set list-style property to none.
+
+
+--remove the border from last item 
+--use pseudo selector last child on li
+.side_menu li:last-child
+{
+    border-bottom: none;
+}
+
+--note: display the navigation items as block.
+syntax: display: block;
+then only we effectively add padding to the navigatio bars.
+
+
+

@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Navigations Menu Styling</title>
 </head>
 <style>
-   body{
+    *
+    {
+        box-sizing: border-box;
+    } 
+    .clr
+    {
+        clear: both;
+    }  
+   body
+   {
        font-family: Arial, Helvetica, sans-serif;
    }
+
+   /* Side Menu Styling */
    ul.side_menu
    {
         /* remove bullet points */
@@ -19,27 +31,86 @@
         width: 300px;
         /* default list items hav padding of 40px on left */
         padding: 20px;
+        margin-top: 30px;
 
     }
     .side_menu li
     {
         font-size: 18px;
         line-height: 2em;
-        border-bottom: 2px solid rgb(139, 16, 16);        
+        border-bottom: dashed 1px #dddddd;       
     }
-    a{
-        text-decoration: none
+    /* remove the border from last item */
+    /* use pseudo selector last child on li*/
+    .side_menu li:last-child
+    {
+        border-bottom: none;
     }
+  
+    /* to style each a tags */
+    .side_menu li a
+    {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    /* hover over the links */
+    .side_menu li a:hover{
+        color: #ff3388;
+    }
+
+    /* Navigation Bars */
+    
+    .nav-bar
+    {
+        list-style: none;
+        /* initially set margin and padding to 0 */
+        margin: 0;
+        padding: 0;
+        background: #8e8bb8;
+        border-radius: 5px;
+        /* when v set the float bg will be gone so tor reset the bg for navigation
+        set the overflow to auto value */
+        overflow: auto;
+       
+    }
+
+    .nav-bar li{
+        float: left;
+        font-size: 18px;
+        /* padding: 50px; */
+    }
+    .nav-bar li a{
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 50px;
+    }
+    /* change bg col while we hover it */
+  
+    .nav-bar li a:hover{
+        background: #246ba5;
+        color: rgb(207, 207, 207);
+    }
+  
+
 
 </style>
 <body>
+        <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+    
     <ul class="side_menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
-     </ul>
+    </ul>
 
-    
 </body>
 </html>
