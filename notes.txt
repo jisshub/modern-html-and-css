@@ -52,7 +52,7 @@ bt they r processed using back end language.
 
 in forms there is 'action' attribute where v specify the file where our form to 
 be submitted. such as php file etc..
-all the inputs are submitted to the file specified in the action
+all the inputs are submitted to the file specified in the action attribute
 
 
 
@@ -404,3 +404,27 @@ then only we effectively add padding to the navigatio bars.
 
 
 
+/* changing block elements to inline element */
+    ul li{
+        display: inline;
+    }
+
+--margn: auto;
+--The auto Value
+You can set the margin property to auto to horizontally center the element within
+ its container.
+
+The element will then take up the specified width, and the remaining space will be split equally
+between the left and right margins:
+
+--cant set margin as auto for an inline element unless it is displayed as block element.
+
+T--The display: inline-block Value
+Compared to display: inline, the major difference is that display: inline-block
+ allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected,
+ but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does
+ not add a line-break after the element, so the element can sit next to other elements.
