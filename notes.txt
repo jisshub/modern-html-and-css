@@ -113,7 +113,7 @@ inline elements elements does not take full page.
 it onlytakes wha its needed.
 so if we write anything after inline elements it will shown up right of the inline element
 dont take new line
-eg: link element 'a'
+eg: link element 'a' and image element img
 
 
 --id and classes
@@ -122,7 +122,7 @@ class can be repeated for different sections in the page.
 
 for eg: if want to style both the contact and about section of our page 
 in those case it is better to use classes, so v cab specify same class name for both.
-and style it  using that common class.
+and style it using that common class.
 
 
 --span and div elements
