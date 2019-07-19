@@ -139,9 +139,12 @@ entity called &nbsp;
 
 semantic tags
 
-main -
-section - about , services , contact etc..
-article tag: blog post,article post -comes inisde section tag
+header - top
+footer-bottom
+
+main - indicates main content of the page. main tag wraps up sections, article  of a page.
+    section - about , services , contact etc..
+        article tag: blog post,article post -comes inisde section tag
 
 aside tag: side bar contents, eg: ads, or contents that is not really tht main focus
 of the page.
@@ -168,8 +171,21 @@ h2 is an element
 <h2> is tag.
 p is a paragraph
 <p> is a tag.
+img is an image element
+<img> is a tag
 
 i.e. elements with in angle brackets r called tags.
+
+
+>dev tools
+ctrl + shift + i to open the dev tools.
+every browser has its own default styling.
+even v dont style a sections of apage, browser does its own styling on that.
+this styling apperas in 'user agent stylesheet' secdtion is dev tools.
+v can make changes temporarily in the page.
+
+
+
 
 
 --fonts in css
@@ -184,6 +200,7 @@ line-height property means line spacing ie space b/w each lines.
 and line-height value is specified em units.
 --em units:
 Relative to the font-size of the element (2em means 2 times the size of the current font)
+ie. line height wud be 32 px.(2x16px)
 
 
 --Color property in css
