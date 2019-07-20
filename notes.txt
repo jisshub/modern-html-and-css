@@ -287,13 +287,13 @@ eg:
     image will be positioned i the top rght corner of the page.
 
 --background-attachment 
-if set to fixed, dont sccroll with the page.i.e. fixed.
+if set to fixed, images dont sccroll with the page.i.e. fixed.
 else,
     it scrolls with the page.
 
 
 --background-size
-to show the whole image.
+to show the whole image that fits the page.
 set value cover for background-size.
 
 --in dev tools,
@@ -307,7 +307,7 @@ while pading is inside the element or inside the border.
         padding: 20px
             gives padding of 20px on all sides of the element.
         margin: 20px
-            gives margin of 20px arouncd the border.
+            gives margin of 20px around the border.
 
 -- if v add the padding and width for a box.
     here both the padding pixel and width will be added to give the box size.
@@ -335,6 +335,7 @@ declared below.
 eg:
 1.
     padding: 20px;
+        it sets padding of 20px  on all sides.
 
 2.
     padding-top: 10px;
@@ -347,7 +348,8 @@ here 2nd  will overwrite the firsst.
 
 --floats and alignment
 
-when we initiallt make  webage it isaligned towards left.
+when we initiallt make  webage it isal
+igned towards left.
 to make it center, just 
     create a container class
     and wrap all the contents  of page inside it.
