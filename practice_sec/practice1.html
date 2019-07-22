@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+</head>
+<body>
+    <h2>Semester Exam Schedule</h2>
+    <hr>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Exam Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RLMCA201</td>
+                    <td>DATA MINING</td>
+                    <td>05/06/2019</td>
+                </tr>
+                <tr>
+                    <td>RLMCA502</td>
+                    <td>ARTIFICIAL INTELLIGENCE</td>
+                    <td>10/02/2019</td>
+                </tr>
+                <tr>
+                   <td>RLMCa782</td> 
+                   <td>CRYPTOGRAPHY</td>
+                   <td>23/4/2019</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>For more info, visit
+            <a href="#" target="_blank">KTU</a>
+        </p>
+    </div>
+    <div>
+        <h3>Instructions</h3>
+        <ul>
+            <li>Dont Bring phones</li>
+            <li>dfsfksf</li>
+            <li>jhdaskjdljaskd</li>
+            <ol>
+                <li>lkjdsal</li>
+                <li>dfshdfk</li>
+            </ol>
+        </ul>
+    </div>
+        <h4>Student info</h4>
+        <hr>
+        <form action="data.py">
+            <div>
+                <label for="admnno">Student Admission No.</label>
+                <br>
+                    <input type="text" id='admnno'name='admnno' placeholder="Enter adminssion no">
+            </div>
+            <div>
+                <label for="name">Student Name</label>
+                <br>
+                    <input type="text" name="name" id="name" placeholder="Enter name">
+            <div>
+                <label for="bktaken">Books Taken</label><br>
+                <select name="bktaken" id="bktaken">
+                    <option value="Mary is dead">Mary is dead</option>
+                    <option value="Shawshank Redemption" selected>Shawshank Redemption</option>
+                </select>
+            </div>
+            <div>
+                <label for="scheme">Type of Scheme:</label><br>
+                Book Bank
+                <input type="radio" name="scheme" id="scheme" value="Book Bank">
+                Ordinary Scheme
+                <input type="radio" name="scheme" id="scheme" value="Ordinary" checked>
+                Luxury
+                <input type="radio" name="scheme" id="scheme" value="Luxury">
+            </div>
+            <br>
+            <div>
+                <label for="decsription">Books Descriptions</label><br><br>
+                <textarea name="description" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="issue">Issued Date:</label><br>
+                <input type="date" name="issue" id="issue_id">
+            </div>
+            <div>
+                <label for="status">Books Status:</label><br>
+                Issued
+                <input type="checkbox" name="status" id="status_id" checked>
+                Returned
+                <input type="checkbox" name="status" id="status_id">
+                Renewed
+                <input type="checkbox" name="status" id="status_id" checked>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <br>
+                <input type="reset" value="Reset">
+            </div>
+
+            </div>
+        </form>
+
+</body>
+</html>

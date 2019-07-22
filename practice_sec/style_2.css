@@ -1,0 +1,39 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    background-color: blueviolet;
+}
+#about
+{
+    font-size: 17px;
+}
+.reason
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.reason h3{
+    color: chocolate;
+
+}
+#about p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#first-hd
+{
+    color: darkblue;
+
+}
+
+#semantic,#semantic2
+{
+    color: brown;
+}
+
+.dhsk
+{
+    font-style: italic;
+}

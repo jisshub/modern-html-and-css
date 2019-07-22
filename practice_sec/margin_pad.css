@@ -1,0 +1,50 @@
+*
+{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(img/cloud.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1
+{
+    border: 3px solid red;
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+h1{
+    width: 100px;
+    border: 3px solid red;
+    padding: 30px;
+    margin: 40px;
+
+}
+h1{
+    /* padding: top right bottom left */
+    padding: 30px 70px 50px 60px;
+    margin: 50px 20px 30px 40px;
+}
+
+h1{
+    /* padding: top/bottom left/right */
+    padding: 30px 60px;
+    margin: 50px 20px;
+}
+
+h1{
+    /* padding: 50px on all sides */
+    padding: 50px;
+    width: 200px;
+}

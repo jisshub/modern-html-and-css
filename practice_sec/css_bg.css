@@ -1,0 +1,36 @@
+body{
+    background-image: url(img/Big-Data-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+p, ul{
+    color: rgb(141, 35, 35);
+}
+
+.arch #first-para
+{
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+}
+.about #second-para
+{
+    border: 3px solid magenta;
+    border-radius: 5px;
+}
+.arch #list-data
+{
+    border: 5px solid yellow;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+}
+
+#third-para
+{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: darkcyan;
+}

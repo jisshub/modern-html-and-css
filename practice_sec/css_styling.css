@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(141, 141, 228)
+}
+h1{
+    color: #1E8A8B;
+}
+
+.laws p{
+    background-color: #CCFF00;
+    color: #5F0A0A;
+
+}
+#Gameplay h2{
+    background-color: #239B56;
+    color: #A04000; 
+
+}
+
+#Gameplay, .same
+{
+    color: #A00000;
+}

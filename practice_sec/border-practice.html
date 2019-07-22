@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border-Box</title>
+<style>
+*
+{
+    box-sizing: border-box;
+}
+/* by setting box-sising property to border-box v maintain same size
+for all the boxes  even though they had padding. */
+#box-1
+{   
+    width: 300px;
+    height: 100px;
+    border: 2px solid darkred;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+ 
+}
+#box-2{
+    width: 300px;
+    height: 100px;
+    border: 2px solid darkgreen;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#box-3
+
+{
+    width: 300px;
+    height: 100px;
+    border: 2px solid darkslateblue;
+    padding: 30px;
+    margin: 50px 0px 0px 30px;
+}
+</style>
+</head>
+
+<body>
+    <h4>Padding not set</h4>
+    <div id="box-1">
+        adlkhadkjasdkhsksdfshfksdsdada
+    </div>
+    <h4>padding is set</h4>
+    <div id="box-2">
+        lfkjsfsfdhhhhhhhhhhkshfsksada
+    </div>
+    <h4>padding is set</h4>
+    <div id="box-3">
+        slfjsfsdfjsdfskjfhsdkjfsfsfhskfs
+    </div>
+</body>
+</html>
