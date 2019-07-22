@@ -348,8 +348,7 @@ here 2nd  will overwrite the firsst.
 
 --floats and alignment
 
-when we initiallt make  webage it isal
-igned towards left.
+when we initially make  webage it is aligned towards left.
 to make it center, just 
     create a container class
     and wrap all the contents  of page inside it.
