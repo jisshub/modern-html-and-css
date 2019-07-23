@@ -1,0 +1,50 @@
+*{
+ box-sizing: border-box;   
+}
+/* .clr{
+    clear: both;
+} */
+.container
+{
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.about-1 p{
+    text-align: justify;
+}
+
+.about-1{
+    width: 65%;
+    float: left;
+    }
+#contents{
+    border: 2px solid lightseagreen;
+    width: 30%;
+    float: right;
+    /* margin-bottom: 300px; */
+    padding: 20px;
+    margin-top: 80px;
+    
+
+}
+#contents p{
+    text-align: justify;
+}
+.contents-hide
+{
+    width: 40%;
+    border: 2px solid lightslategray;
+    float: left;
+    margin: 30px 0px;
+}
+a:hover
+{
+    color: brown;
+    font-size: 40px;
+    
+}
+
+#change{
+    list-style: none;
+}
