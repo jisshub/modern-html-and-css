@@ -16,6 +16,8 @@ body
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+/*Side Menu*/
 .side-menu
 {
     list-style: none;
@@ -44,14 +46,13 @@ body
 .side-menu li a
 {
     text-decoration: none;
-    color: rgba(15, 80, 55, 0.705);
+    /* color: rgba(15, 80, 55, 0.705); */
 }
 
 .side-menu li a:hover{
     border: 1px solid green;
-    background-color: aqua;
+    color: coral;
 }
-
 /* #btn button
 {
     border: 2px solid green;
@@ -68,15 +69,66 @@ body
     color: brown;
     /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
 /* } */ 
+
+/* here v display each anchor element as block */
+/* thus v acn padding to each achor element */
+.navbar li a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+
+    /* list-style: none; */
+
+}
+.navbar li a:hover{
+    color: #334660;
+    background-color: #DA70D6;
+    /* to set the hover time */
+    transition: 3s;
+}
+
+/* styling the navigation bar */
+.navbar
+
+{
+    list-style: none;
+    /* float: left; */
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    background: lightskyblue;
+    overflow: auto;
+}
+/* here v float all the list tems */
+/* bt when v float the list items it removes the backgroud v set in the navbar */
+/* to fix that use overflow property and set its value as auto */
+.navbar li{
+    float: left;
+    margin: 0px 40px;
+    /* background: green; */
+
+}
+
 </style>
 <body>
-    <ul class="side-menu">
+    
+    <ul class="navbar">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
+     </ul>
+<br><br>
+     <ul class="side-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+     </ul>
+    
 
-    </ul>
+
     <!-- <div id="btn">
         <button type="submit">Link Button</button>
     </div>
