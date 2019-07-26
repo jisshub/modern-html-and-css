@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Styling</title>
+</head>
+<style>
+    *
+    {
+        box-sizing: border-box;
+    }
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.side-menu
+{
+    list-style: none;
+    border: 3px solid saddlebrown;  
+    border-radius: .5em;
+    width: 300px;
+    /* by default unordered list hav padding of 40 px on left side */
+    /* so v overwrite it with 20px. */
+    padding: 20px;
+    
+}
+.side-menu li{
+    line-height: 3em;
+    /* border-bottom to style bottom of each li element */
+    border-bottom: 1px dotted lightgrey;
+    
+}
+/* remove border of the last element */
+/* ue pseudo selector last-child on li element */
+.side-menu li:last-child
+
+{
+   border-bottom: none;
+   /* text-decoration: none; */
+}
+.side-menu li a
+{
+    text-decoration: none;
+    color: rgba(15, 80, 55, 0.705);
+}
+
+.side-menu li a:hover{
+    border: 1px solid green;
+    background-color: aqua;
+}
+
+/* #btn button
+{
+    border: 2px solid green;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+
+}
+#btn button:hover
+{
+    background-color: lightgreen;
+    cursor: pointer;
+    border: none;
+    color: brown;
+    /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
+/* } */ 
+</style>
+<body>
+    <ul class="side-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+    <!-- <div id="btn">
+        <button type="submit">Link Button</button>
+    </div>
+     -->
+</body>
+</html>
