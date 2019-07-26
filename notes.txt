@@ -416,6 +416,13 @@ set list-style property to none.
     border-bottom: none;
 }
 
+--to remove underlines from links,
+text-decoration property on link to none;
+a{
+    text-decoration: none;
+}
+
+
 --note: display the navigation items as block.
 syntax: display: block;
 then only we effectively add padding to the navigatio bars.
