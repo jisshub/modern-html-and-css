@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline and Block Display</title>
+    <style>
+    /* converting block lebel to inline level elements */
+    li{
+        display: inline;
+        padding: 40px;
+    }
+    /*converting to block level  */
+    img
+    {
+
+        display: block;
+        /* to mate it center use margin auto */
+        margin: auto;
+    }
+    .box
+    {
+        width: 28%;
+        text-align: justify;
+        background: lightgray;
+        padding: 15px;
+        /* add box-sizing since padding is given. if not, each box width will be higher than the actual width specified. */
+        box-sizing: border-box;
+        margin:20px 25px;; 
+       
+        display: inline-block;
+        /* margin-right: 15px; */
+    }
+    </style>
+</head>
+<body>
+        <!--turning block level elements to inline elements and vice versa  -->
+    <ul>
+        <!-- bt default all list elements r block levekl -->
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+
+    </ul>
+    <!-- turning a inline element to block level element -->
+    <!-- hern img is an inline level element-->
+    <img src="../css_sandbox/img/leaf.png" alt="#">
+    <img src="../css_sandbox/img/leaf.png" alt="#">
+    
+    <div class="box">
+        <h3>Heaing1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos fugiat consequatur reprehenderit optio exercitationem blanditiis itaque provident laborum ex, sequi ab ipsum cumque neque amet? Atque provident vero consequatur!</p>
+    </div>
+    <div class="box">
+        <h3>Heading2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, rerum earum corrupti eius non beatae veniam eveniet, numquam doloribus mollitia voluptatum delectus animi? Quisquam labore nesciunt aliquam voluptatibus fugit dolorum?</p>
+    </div>
+    <div class="box">
+        <h3>Heading3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sapiente suscipit! Tempore molestias voluptatibus explicabo sed rerum illo, dolores ea sequi, sint recusandae corporis? Labore reprehenderit ad porro aliquam nihil?</p>
+
+    </div>
+</body>
+</html>

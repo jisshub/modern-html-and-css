@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS positioning</title>
+</head>
+<style>
+    body
+    {
+        height: 4000px;
+    }
+    .box
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+    #box-1
+
+    {
+        background-color: blue;
+        /* z-index: 2  ; */
+        /* top: 400px; */
+    }
+    .container
+    {   
+        background-color: #333333;
+        position: relative;
+        width: 500px;
+        height: 500px;
+    }
+    #box-2
+    {
+        position: absolute;
+        background-color: #57C4A7;
+        top: 40px;
+        left: 40px;
+    }
+    #box-3
+    {
+        position: absolute;
+        background-color: #FC32D2;
+        bottom: 40px;
+        right: 40px;
+
+    }
+    #box-4
+    {
+       /* stick the box to a top while scrolling*/
+       
+        background-color: #5B005B;
+        position: sticky;
+        top: 0;
+        /* here the box sticks at top of the page while scrolling */
+        
+    }
+    #box-5
+    {
+         /* fix the box in a particular position */
+        /* use fixed value for position property */
+        position: fixed;
+        left: 100px;
+        bottom: 30px;
+        background-color: #51645A;
+        /* by speicfyiing z-index as -1 box goes under the other boxes while scrolling */
+        z-index: -1;
+    }
+    
+</style>
+<body>
+    <h1>CSS POSITIONS</h1>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+
+</body>
+</html> 
