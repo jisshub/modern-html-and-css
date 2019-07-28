@@ -59,10 +59,10 @@ all the inputs are submitted to the file specified in the action attribute
 for attribute of label tag must match with the id of the input
 name attrbute of input tag is used on the server side. ie if want to grab the value 
 of input we need to use the value of name attribute.
-
+</form>
 textarea tag is used instead of input tag to while creating an bio form or message box
 
-
+</form>
 --select tag for dropdown menus
 
 --date type for date related data
