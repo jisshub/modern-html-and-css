@@ -515,5 +515,35 @@ if z-index setas -1 for an elemen it appers  under others while scroll
 if z-index set as 1 for an elemen it appers  above others scrolling.
 
 
+display: none;
+-- this propeprty will remove the element from the page.
+
+for eg: 
+h1{
+    display: none;
+}
+
+here it will remve the heading from page.
+
+to hide the lement rather than remving it use visibilty property.
+ie,
+     visibilty: hidden;
+
+
+NOTE -- styling using classes or id have more order of prefernce than styling suing the element directly.
+
+
+--!important flag
+
+Using flag called !important can b used to set importance for a particluar styling even it is styled more than times.
+
+eg:
+        h3{
+        color: brown !important;
+
+    }   
+
+color will remain as  brown even if styed it again
+
 
 

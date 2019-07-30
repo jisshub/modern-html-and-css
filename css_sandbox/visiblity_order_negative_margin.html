@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Page</title>
+</head>
+<style>
+    .hello
+    {
+    color: blue;
+    }
+    h1
+    {
+        color: red;
+       /* v rmove the h1 from the page */
+        /* display: none; */
+        /* to hide the lement rather than remving it use visibilty property */
+        /* visibility: hidden; */
+        
+    }
+    h1
+    {
+        color: green;
+    }
+    
+   /* here v color h1 as green  and red. but order of preference will be given to second one instead of first. thus the color will be green */
+
+   /* set a class hello for h1 element and when v style it using that specific class hello then it will be prefered more than when styling the h1 element direclty.
+   here v r overwriting h1 with the class name hello */
+
+    h2
+    {
+        color: darkblue;
+    }
+    #welcome
+    {
+        color: darkorange;
+    }
+    /* here id welocme is prefered more than h2. */
+
+    h3{
+        color: brown !important;
+
+    }   
+    /* here v set an !important  flag on h3. so even if v style the color using class or coloring using h3 multiple times, that particular h3 with flag !important will be given importance than all.*/
+    .about
+    {
+        color: gray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+        color: crimson;
+    }
+    /* Example for !important */
+    .lorem{
+        font-size: 20px;
+        color: red;
+    }
+    .lorem
+    {
+        font-size: 60px !important;
+    }
+
+</style>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatibus facere quaerat! Quisquam placeat laudantium hic tempora! Quisquam quis, nam rerum, explicabo incidunt nostrum cum placeat dignissimos impedit illum aliquam?</p>
+    <h2 id="welcome">Welcome Abroad</h2>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae provident itaque voluptatibus eaque dolore, eius veritatis velit fugit placeat, facilis, omnis praesentium. Magni fuga dolorum ipsam eaque ea, suscipit cumque?</P>
+
+    <h3 class="about">About</h3>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatum alias accusantium, excepturi a ratione dolores dignissimos asperiores velit eligendi voluptates ex nam minus tempore? Et cumque amet quasi harum!</p>
+</body>
+</html>

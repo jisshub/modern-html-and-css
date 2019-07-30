@@ -1,0 +1,60 @@
+body
+{
+    background-color: #47476B;
+}
+.container
+{
+    /* border: 2px solid gray; */
+    /* display: inline-block; */
+    background: white; 
+    margin: 20px auto;
+    max-width: 320px;
+
+}
+*
+{
+    box-sizing: border-box;
+}
+#box-1, #box-3
+{
+    text-align: center;
+    /* margin: 20px 0px; */
+}
+.box-2
+{
+    margin: 0px 20px;
+}
+.box-2 input
+{
+    width: 250px;
+    height: 25px;
+}
+.box-3
+{
+    margin-top: 12px;
+}
+#box-3
+{
+    margin: 0 20px; 
+}
+div#submit input
+{
+    border: none;
+    background-color: #33CC99;
+    color: white;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+div#submit input:hover
+{
+    background-color: #28A37A;
+}
+div#box-1
+{
+    padding-top: 10px;   
+}
+div#box-3
+{
+    padding-bottom: 10px;
+}

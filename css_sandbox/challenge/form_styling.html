@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+
+</head>
+<link rel="stylesheet" href="styleform.css">
+<body>
+    <div class="container">
+        <div id="box-1">
+            <h2>Sign Up</h2>
+            <p>It's free and only take a minute</p>
+                
+        </div>
+        <form action="action.py" name="signupform">
+            <div class="box-2">
+                <!-- First Name <br> -->
+                <div id="box-fname" class="box-3">
+                    <label for="first_name">First Name</label><br>
+                    <input type="text" name="first_name" id="first_name"><br>
+                </div>
+                <div id="box-lname" class="box-3">
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text" name="last_name" id="last_name"><br>
+                </div>
+                <div id="email" class="box-3">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email"><br>
+                </div>
+                <div id="passw" class="box-3">
+                    <label for="pass">Password</label><br>
+                    <input type="password" name="pass" id="pass"><br>
+                </div> 
+                <div id="confirm_pasw" class="box-3">
+                    <label for="confirm_psw">Confirm Password</label><br>
+                    <input type="password" name="confirm_psw" id="confirm_psw"><br>
+                </div>
+                <div id="submit" class="box-3">
+                    <input type="submit" value="Sign up"><br>
+                </div>
+            </div>
+        </form>
+        <div id="box-3">
+            <p>
+                By Clicking the Sign Up button you agree to our
+                <a href="#">Links&amp;Conditions</a> and 
+                <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
