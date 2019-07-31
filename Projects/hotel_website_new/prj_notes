@@ -1,0 +1,27 @@
+always name the home page asindex.html
+crate a css folder for all our style files.
+
+use semantic tags while cretaing webpages.
+such header tag for header of the page ...
+
+
+use an id for the navbar and put all the stuff in it.
+here id is the parent.
+
+after settong the html for navbar lets move to style it.
+
+
+-- always style the body with, by specifying the html
+ie.
+html, body{
+
+}
+
+
+here v need to some padding for header elements.
+since v reomov all the margin and padding from athe page.
+need to manually specify the spacing.
+
+
+
+

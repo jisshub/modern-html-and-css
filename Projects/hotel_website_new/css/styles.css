@@ -1,0 +1,66 @@
+/* reset the current styling of the browser */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main styling */
+/* here v style fth body of the page
+ */
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+
+h1
+{
+    padding-bottom: 20px;
+}
+a
+{
+    text-decoration: none;
+    
+
+}
+#navbar
+{   
+    overflow: hidden;
+    background: #333333;
+    /* color: white; */
+    /* if v set white as color it will no be shown up since text specified in a tag. so need to explicitly specify navbar with the a tag. like below*/
+}
+#navbar a{
+    color: white;
+
+}
+
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    float: right;
+    list-style: none;
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    
+    /* always deisplay the a element as block since only padding can b effectively given */
+    display: block;
+    /* margin-right: 200px; */
+    padding: 20px;
+}
+/* here v change style of link while hover over it  */
+#navbar ul li a:hover
+{
+    color: red;
+    transition: 1.5s;
+    background: #444444;
+
+}
+

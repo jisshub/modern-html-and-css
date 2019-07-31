@@ -5,8 +5,16 @@ such as html xml xhtml..
 
 deaclare document as html5
 
-metatags:
+--metatags:
+Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
 
+Example 1 - Define keywords for search engines:
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+
+Example 2 - Define a description of your web page:
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+
+--tags
 tags have attributes and for each attribute there is a property.
 
 one h1 per page is the best practice.
@@ -117,7 +125,7 @@ eg: link element 'a' and image element img
 
 
 --id and classes
-always use an id at Once. ie it is individual to a particular section
+always use an id at amOnce. ie it is individual to a particular section
 class can be repeated for different sections in the page.
 
 for eg: if want to style both the contact and about section of our page 
