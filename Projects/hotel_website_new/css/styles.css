@@ -5,6 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container
+{
+    max-width: 900px;
+    margin: auto;
+    /* set padding 0 to top and bottom and 10 for left and right */
+    padding: 0 10px;
+}
+
 /* main styling */
 /* here v style fth body of the page
  */
@@ -12,12 +20,14 @@
 html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
+    height: 3000px;
 }
 
 h1
 {
     padding-bottom: 20px;
 }
+
 a
 {
     text-decoration: none;
@@ -58,9 +68,37 @@ a
 /* here v change style of link while hover over it  */
 #navbar ul li a:hover
 {
-    color: red;
-    transition: 1.5s;
+    color: #F0AD4E;
+    transition: .5s;
     background: #444444;
 
+}
+
+/* here v set the stylng for the home navbar when the page loads */
+
+#navbar ul li a.home
+{
+    color: #F0AD4E;
+    background-color: #444444;
+}
+#showcase
+{
+    background: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+
+
+.primary-target
+{
+    color: #F0AD4E;
+   
+    /* font-size: 30px; */
+}
+#showcase h1{
+font-size: 70px;       
 }
 

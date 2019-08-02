@@ -23,5 +23,27 @@ since v reomov all the margin and padding from athe page.
 need to manually specify the spacing.
 
 
+finally when v stretch our page, v need our navigations 
+ars to appear somewhat center of the page,
+for that v create container class with in the nav element and place the heading and navigations in it.
 
 
+if v place the container outside the nav, it affects the background that contains the heading and navbar.
+ie background will be restrcited with in the max-width 
+of the container. 
+
+ie,
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+so here when v stretch and while it exceed the max width given the heading and navs comes closer to the middle of the page.
+
+
+next we need to design shocase of the page.
+
+here also v create a container and place all the section
+in it. so thus when v strecth the page, contents will be appenared center of the page instead of geting stretched along the page.
