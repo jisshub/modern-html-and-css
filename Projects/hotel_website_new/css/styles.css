@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utility classes */
+/* classes that r used when v need to apply commmon styles for more elements.*/
+/* they r not speicifc to a particulr element or section in the page. */
 .container
 {
     max-width: 900px;
@@ -13,14 +17,56 @@
     padding: 0 10px;
 }
 
+.primary-target
+{
+    color: #F0AD4E;
+}
+
+/* set a font size for the element thru out page that have the class lead */
+.lead
+{
+    font-size: 18px;
+}
+
+/* apply all this style for links and buttons with class btn */
+.btn
+{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    background: #333333;
+    padding: 12px 16px;
+    /* even though links dont have border v add border to none since buttons have borders.
+    so no border for both 4 btns and links in the page.
+    always set border to none. ie no border for links and buttons in the page. */
+    border: none;
+    
+    /* also set cursor to pointer since buttons dont change their cursor to pointer while v hover over it,bt links default change cursor to pointer */
+    cursor: pointer;
+   
+}
+.btn:hover
+{
+    background: #F0AD4E;
+    color: #333333;
+}
+
+.btn-link
+{
+    background: #ffffff;
+    color: #333333;
+}
+
+
+
+
 /* main styling */
 /* here v style fth body of the page
  */
-
 html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
-    height: 3000px;
+
 }
 
 h1
@@ -81,24 +127,41 @@ a
     color: #F0AD4E;
     background-color: #444444;
 }
+
+
+
 #showcase
 {
     background: url('../img/showcase.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 500px;
+    /* margin-top: 100px; */
 }
 
 
 
-.primary-target
+#showcase .showcase-content
 {
-    color: #F0AD4E;
+    /* margin-top: 300px; */
+    color: #ffffff;
+    text-align: center;
+    padding-top: 170px;
    
-    /* font-size: 30px; */
+
 }
-#showcase h1{
-font-size: 70px;       
+
+#showcase .showcase-content h1
+{
+    font-size: 60px;
+    /* padding is already specified for all h1 */
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p{
+  
+    padding-bottom: 20px;
+    line-height: 1.5em;
 }
 

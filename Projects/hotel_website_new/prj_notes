@@ -47,3 +47,21 @@ next we need to design shocase of the page.
 
 here also v create a container and place all the section
 in it. so thus when v strecth the page, contents will be appenared center of the page instead of geting stretched along the page.
+
+
+
+style primary-target class
+.primary-target
+{
+    color: #dgajd;
+} 
+
+sincce v need to apply this style to other element as well
+having class primary-target v didnt spcify h1 for it.
+
+
+ <!-- next gona do the sections of the page -->
+
+ need to have the backgroud for the section of all the pages as adark.
+ so create a ultitiy class for the section.
+ 

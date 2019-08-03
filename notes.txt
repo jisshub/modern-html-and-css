@@ -204,6 +204,7 @@ EG:
 font-family: Arial, Helvetica, sans-serif;
         /* it looks for Arial if not found then Helvetica if not, then sans serif */
 font-size is deafult 16 px for page
+
 line-height property means line spacing ie space b/w each lines.
 and line-height value is specified em units.
 --em units:
@@ -428,8 +429,8 @@ set list-style property to none.
 text-decoration property on link to none;
 a{
     text-decoration: none;
-}
-
+}display: inline-blo
+display: inline-blo
 
 --note: display the navigation items as block.
 syntax: display: block;
@@ -453,7 +454,7 @@ between the left and right margins:
 --cant set margin as auto for an inline element unless it is displayed as block element.
 
 T--The display: inline-block Value
-Compared to display: inline, the major difference is that display: inline-block
+Compared to display: inline, the major difference is that display: inline-blockdisplay: inline-blo
  allows to set a width and height on the element.
 
 Also, with display: inline-block, the top and bottom margins/paddings are respected,
@@ -464,7 +465,7 @@ Compared to display: block, the major difference is that display: inline-block d
  
 
 
- CSS background disappears when using float:left 
+ CSS background disapbackgroundpears when using float:left 
 
  to fix this, use overflow and set ts value as auto.
 
