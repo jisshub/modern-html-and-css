@@ -465,7 +465,7 @@ Compared to display: block, the major difference is that display: inline-block d
  
 
 
- CSS background disapbackground disappears when using float:left 
+ CSS background disappears when using float:left 
 
  to fix this, use overflow and set ts value as auto.
 
