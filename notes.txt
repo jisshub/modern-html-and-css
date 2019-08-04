@@ -465,7 +465,7 @@ Compared to display: block, the major difference is that display: inline-block d
  
 
 
- CSS background disapbackgroundpears when using float:left 
+ CSS background disapbackground disappears when using float:left 
 
  to fix this, use overflow and set ts value as auto.
 
@@ -553,6 +553,18 @@ eg:
     }   
 
 color will remain as  brown even if styed it again
+
+
+
+
+--min-height: 100%;
+
+if height of section is given 500px.
+if v place an bgimage in that section , so inorder for the image to appear 100% of that section,
+then set min-height peoprty to 100%. thus, image takes 500px.
+
+if need image to appear 50% of the original height, set min-height: 50%. ie. it takes 250px.
+
 
 
 

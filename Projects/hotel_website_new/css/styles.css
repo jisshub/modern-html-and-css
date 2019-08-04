@@ -51,11 +51,21 @@
     color: #333333;
 }
 
-.btn-link
+.btn-light
 {
-    background: #ffffff;
+    background: #f4f4f4;
+    margin-top: 40px;
     color: #333333;
 }
+
+.bg-dark
+{
+    background: #333333;
+    color: #ffffff; 
+}
+
+
+
 
 
 
@@ -85,7 +95,7 @@ a
     overflow: hidden;
     background: #333333;
     /* color: white; */
-    /* if v set white as color it will no be shown up since text specified in a tag. so need to explicitly specify navbar with the a tag. like below*/
+    /* if v set white as color it will no be shown up since text specified in 'a 'tag. so need to explicitly specify navbar with the 'a' tag. like below*/
 }
 #navbar a{
     color: white;
@@ -165,3 +175,35 @@ a
     line-height: 1.5em;
 }
 
+#home-info
+{
+    height: 400px;
+}
+
+/* here v plot the background of info-img */
+#home-info .info-img
+{
+    background-image: url('../img/photo-1.jpg');
+    background-repeat: no-repeat;
+    float: left;
+    width: 50%;
+    /* min-height property is set to 100%,
+    so the image appear in that 100% of the height of the section. */
+    /* ie height is 600px. so image will occupy 100% of it */
+    min-height: 100%;
+
+
+}
+#home-info .info-content
+{
+    width: 50%; 
+    float: right;
+    text-align: center;
+    padding: 50px 30px;
+    height: 400px;
+    overflow: hidden;
+}
+#home-info .info-content p{
+    margin-top: 30px;
+    font-size: 14px;
+}
