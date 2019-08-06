@@ -59,9 +59,28 @@ style primary-target class
 sincce v need to apply this style to other element as well
 having class primary-target v didnt spcify h1 for it.
 
-
  <!-- next gona do the sections of the page -->
 
  need to have the backgroud for the section of all the pages as adark.
  so create a ultitiy class for the section.
  
+
+
+
+--footer of the page.
+
+  <!-- here v need to specify a clr class, else the feature section may be floated over the footer -->
+  <!-- so need to clear the float. so v spify the clr class here and later clear the float in css. -->
+
+ie. 
+	spcify it before the footer section.
+	 <div class="clr"></div>
+later style it,
+	.clr
+	{
+	clear: both;
+	}
+
+
+
+

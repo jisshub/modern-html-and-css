@@ -81,7 +81,10 @@
     padding: 50px 40px;
 }
 
-
+.clr
+{
+    clear: both;
+}
 
 /* main styling */
 /* here v style fth body of the page
@@ -244,3 +247,18 @@ a
     min-height: 100%;
 }
 
+/* footer */
+
+#main-footer
+{
+    height: 100px;
+    background: #444444;
+    text-align: center;
+    padding: 40px;
+}
+
+#main-footer p{
+    color: #f4f4f4;
+    /* padding-top: 40px; */
+    
+}
