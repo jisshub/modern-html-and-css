@@ -118,6 +118,7 @@ a
 
 }
 
+/* align the logo to the left */
 #navbar h1{
     float: left;
     padding-top: 20px;

@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 10px;
+}
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+
+}
+a{
+    text-decoration: none;
+}
+#navbar
+{
+    background: #333333;
+    overflow: hidden;
+    /* height: 50px; */
+}
+
+#navbar a{
+      color: #f4f4f4;
+}
+/* align logo to the left */
+#navbar h1{
+    float: left;   
+    padding-top: 20px;
+}
+#navbar ul{
+    float: right;
+    /* overflow: auto; */
+    list-style: none;
+}
+
+#navbar ul li
+{
+      float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+}
+#navbar li a:hover, #navbar li a.current
+{
+    color: #F0AD4E;
+    background: #444444;
+}
+/* #navbar li a.current
+{
+    color: #F0AD4E;
+    background: #444444;
+} */
