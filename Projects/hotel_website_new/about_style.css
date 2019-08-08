@@ -11,6 +11,10 @@
     margin: auto;
     padding: 0 10px;
 }
+.bg-light
+{
+    background: #f4f4f4;
+}
 html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
@@ -59,3 +63,31 @@ a{
     color: #F0AD4E;
     background: #444444;
 } */
+#about_info
+
+{
+    overflow: auto;
+}
+
+#about_info #about_contents
+{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    height: 300px;
+   
+    
+}   
+ 
+#about_info .about_img
+{
+    background: url('./img/photo-2.jpg');
+    background-repeat: no-repeat;
+    float: right;
+    width: 50%;
+    min-height: 100%;
+   
+
+
+}
