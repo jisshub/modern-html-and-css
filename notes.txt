@@ -566,5 +566,10 @@ then set min-height peoprty to 100%. thus, image takes 500px.
 if need image to appear 50% of the original height, set min-height: 50%. ie. it takes 250px.
 
 
+Image Round Shape--
+--to make the image looks round 
+	border-radius: 50%;
+
+
 
 
