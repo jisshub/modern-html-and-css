@@ -111,3 +111,96 @@ color: #F0AD4E;
     color:#454545;
 }
 
+#guest_details .guest_bg
+{
+    background: url('./img/test-bg.jpg') no-repeat center/cover;
+    /* give the height for the bgimage else no background appears */
+    height: 600px;
+}
+
+
+.bg-dark
+{
+    background: #333333;
+    /* color: #ffffff;  */
+}
+.head h1
+{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+
+.box-1
+{
+    background: #FBCC7A;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    
+  
+  
+}
+.box-1 .box-p 
+{
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: right;
+    width: 85%;
+}
+.box-1 .guest_img
+{
+    float: left;
+    width: 15%;
+    padding: 15px;
+   
+}
+.guest_img img{
+    border-radius: 50%;
+
+}
+
+.box-p{
+    font-size: 14px;
+}
+
+.box-2
+{
+    background: #FBCC7A;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    margin-top: 50px;
+    
+  
+  
+}
+.box-2 .box-p 
+{
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: right;
+    width: 85%;
+}
+.box-2 .guest_img
+{
+    float: left;
+    width: 15%;
+    padding: 15px;
+   
+}
+#about-footer .foot
+{
+    background: #444444;
+    color: #f4f4f4;
+ 
+}
+#about-footer .foot p{
+    text-align: center;
+    padding: 30px 0px;
+}
