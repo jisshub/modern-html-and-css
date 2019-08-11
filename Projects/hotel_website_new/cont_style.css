@@ -53,3 +53,13 @@ nav#navbar li a:hover, #navbar li a.current
 
 /* --------- */
 
+/* Sections */
+#sec-1 h1{
+    font-size: 35px;
+    padding: 20px 0;
+}
+span#contact-first
+{
+    color: #F0AD4E;
+}
+
