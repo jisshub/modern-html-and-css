@@ -6,8 +6,50 @@
 }
 .container
 {
-    max-width: 960px;
+    max-width: 900px;
     margin: auto;
     padding: 0 10px;
-    overflow: hidden;
+    
+} 
+
+html,body{
+    line-height: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* Nav bar  */
+nav#navbar
+{
+    overflow: hidden;
+    background-color: #333333;
+    height: 70px;
+}
+nav#navbar a{
+    color: white;
+    text-decoration: none;
+
+}
+nav#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+nav#navbar ul{
+    float: right;
+    list-style: none;
+}
+nav#navbar ul li{   
+    float: left;
+
+}
+nav#navbar ul li a{
+    display: block;
+    padding: 20px;
+}
+nav#navbar li a:hover, #navbar li a.current
+{
+    color: #F0AD4E;
+    background: #444444;
+}
+
+/* --------- */
+
