@@ -13,6 +13,7 @@
 } 
 
 html,body{
+    height: 2000px;
     line-height: 1.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -56,10 +57,48 @@ nav#navbar li a:hover, #navbar li a.current
 /* Sections */
 #sec-1 h1{
     font-size: 35px;
-    padding: 20px 0;
+    padding-top: 20px;
 }
 span#contact-first
 {
     color: #F0AD4E;
 }
+#contact p.para-1{
+    padding: 20px 0;
+}
+#form-1 input.info
+{
+    width: 900px;
+    height: 40px;   
+}
+#form-1 textarea
+{
+    width: 900px;
+    height: 150px;
+}
+#contact .btn
+{
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    background: #444444;
+    color: white;
 
+}
+#contact .btn:hover
+{
+    background: #F0AD4E;
+    color: #333333;
+    cursor: pointer;
+}
+
+#form-1 input 
+{
+    padding: 0 15px;
+    font-size: 14px;
+}
+#form-1 textarea
+{
+    padding: 15px;
+}
