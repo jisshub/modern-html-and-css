@@ -10,6 +10,7 @@
     max-width: 960px;
     margin: auto;
     padding: 0 10px;
+    overflow: auto;
 }
 .bg-light
 {
@@ -105,13 +106,14 @@ color: #F0AD4E;
     padding-right: 20px;   
     /* to make the image looks round */
     border-radius: 50%;
+    
 }
 #about_contents
 {   
     color:#454545;
 }
 
-#guest_details .guest_bg
+#guest_details
 {
     background: url('./img/test-bg.jpg') no-repeat center/cover;
     /* give the height for the bgimage else no background appears */
@@ -124,11 +126,11 @@ color: #F0AD4E;
     background: #333333;
     /* color: #ffffff;  */
 }
-.head h1
+.primary-head
 {
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 70px;
     padding-bottom: 30px;
 }
@@ -157,7 +159,7 @@ color: #F0AD4E;
     float: left;
     width: 15%;
     padding: 15px;
-   
+    
 }
 .guest_img img{
     border-radius: 50%;
@@ -186,6 +188,7 @@ color: #F0AD4E;
     padding-bottom: 30px;
     float: right;
     width: 85%;
+    
 }
 .box-2 .guest_img
 {
@@ -203,4 +206,9 @@ color: #F0AD4E;
 #about-footer .foot p{
     text-align: center;
     padding: 30px 0px;
+}
+
+.clr
+{
+    clear: both;
 }
