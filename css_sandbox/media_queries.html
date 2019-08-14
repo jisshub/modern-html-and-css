@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+</head>
+<style>
+    html,body{
+        background: grey;
+        padding-top: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        text-align: center;
+
+    }
+    h1
+    {
+        display: none;
+    }
+    /* Smartphones */
+    /* here v add the media query for smartphones. */
+    /* most of the width of smartphones r below 500px. so v set the maxwidth as 500px.*/
+    @media(max-width: 500px)
+    {
+        html,body 
+        {
+            background: red;            
+        }
+        /* display the h1 having the id smartphone */
+       #smartphone h1
+       {
+            display: block;
+       }
+       
+
+    }
+    /* Tablets */
+    /* here the features of tablets will be shown only b/w the given max and min width */
+    /* ie initially page is deafult grey bg, when it hits 768 px, it shows the tablet features,
+    and continues to be responsive to tablet untill it reaches 500px width */
+    @media(max-width: 768px) and (min-width: 501px)
+    {
+        html, body
+        {
+            background: blue;
+        }
+        #tablet h1
+        {
+            display: block;
+        }
+    }
+    /* Normal */
+    /* hre we set the max-width as 900 and min width as 769  */
+    /* ie when the page reaches the 900 it bg changes to green and h1 displays
+    and continues until it reaches 769 px. */
+    @media(max-width: 900px)and (min-width: 769px)
+    {
+        html,body
+        {
+            background: green;
+        }
+        #normal h1
+        {
+            display: block;
+        }
+    }
+    /* WideScreen */
+    /* here page will be exhibit the features of widescreen untill it reache 901 px.  */
+    @media(min-width: 901px)
+
+    {
+        html, body
+        {
+            background: #333333;
+        }
+        #widescreen h1
+        {
+            display: block;
+        }
+    }
+
+
+</style>
+<body>
+    <div id="widescreen"><h1>Widescreen</h1></div>
+    <div id="normal"><h1>Normal</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="smartphone"><h1>Smartphone</h1></div>
+    <div id="landscape"><h1>Landscape</h1></div>
+    
+</body>
+</html>

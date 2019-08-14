@@ -1,0 +1,38 @@
+Responsive Design.
+--------------------
+
+Using html/css to make a website or Layouts adapt to diff screen sizes.
+
+--set viewport
+--use media queries
+--usng rem units over px
+--using fluid widths
+
+
+Adding the media query
+---------------------------
+
+add in the css file.
+
+media qeury is added to make the page responsive to the diff devices.
+
+syntax:
+
+@media(max-width: value)
+{
+	selector
+	{
+ 		property: value
+	}
+}
+max-width is usually setas 500 px incase of smartphones. since most of phones hav width < 500.
+
+when the page hits the given max-width its background color changes to red.
+
+we can also min-width instead of max-width. it does the opp. of the max-width.
+ie. page will be red bg until it hits 500px. and when it hits 500px, it changes to default bg color.
+
+
+
+
+
