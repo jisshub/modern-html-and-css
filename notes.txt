@@ -572,4 +572,22 @@ Image Round Shape--
 
 
 
+--view port height or vh
+
+view port is whole area inside the browser.
+ each view port height is slice that goes across the page
+there is always 100 vh for each slice
+
+vh of 100 covers entire browser area. 
+
+
+
+--view port width or vw
+
+each vw is a slice that goes down the page.
+and each slice has a vw of 100.
+
+
+
+
 
