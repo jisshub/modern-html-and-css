@@ -36,3 +36,11 @@ ie. page will be red bg until it hits 500px. and when it hits 500px, it changes 
 
 
 
+em and rem units
+----------------------
+em unit
+
+if font size of a parent element is 20px then,
+and font of child is specified as 2em, then its computed fontsize will be 40px, that is double of 20px,
+it is calculated as 20px * 2 == 40px.
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Em and Rem Units</title>
+</head>
+<style>
+    /* em units */
+   #box-2
+   {
+       font-size: 20px;
+   }
+   #box-2 h3
+   {
+       font-size: 2em;
+   }
+
+    #box-2 p
+    {
+        font-size: 2em;
+    }
+
+    /* here font-size of h3 and p will be 40px since we set the font of its parent box-3 as 20px. */
+ 
+
+    /* rem units */
+    #box-3
+    {
+        font-size: 20px;
+    }
+    #box-3 h3
+    {
+        font-size: 2rem;
+    }
+    #box-3 p{
+        font-size: 2rem;
+        
+    }
+
+    /* here rem units depends on root element. ie. default font of an page is 16px.
+    and here i set font of box-3 as 20px. and then set font-size of h3 under its parent box-3 as 
+    2rem and similarly paragraph p as  2 rem .bt here their font-size will be relative to the root element
+     ie. html and not its parent element box-3. ie font-size of box-3 doesnt have asn affect 
+     in computing the font of its h3 and p. they depeneds on root element, not parent
+     so their font-size wud be 16px * 2  ie 32 px.  */
+
+</style>
+<body>
+    <div id="box-1">
+        <h3>Box-One</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium facere deleniti assumenda porro sint impedit illum quod, placeat iusto non hic qui odit quos id totam corporis est deserunt ut.</p>
+ 
+     
+    </div>
+    <div id="box-2">
+            <h3>Box-Two</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium facere deleniti assumenda porro sint impedit illum quod, placeat iusto non hic qui odit quos id totam corporis est deserunt ut.</p>
+    </div>
+        
+    <div id="box-3">
+        <h3>Box-3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, tempora suscipit! Excepturi at voluptas assumenda quis earum voluptatibus, tenetur alias.</p>
+    </div>
+    
+</body>
+</html>

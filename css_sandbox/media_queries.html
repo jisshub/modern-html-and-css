@@ -68,7 +68,7 @@
     }
     /* WideScreen */
     /* here page will be exhibit the features of widescreen untill it reache 901 px.  */
-    @media(min-width: 901px)
+    @media(min-width: 901px) and (max-width: 1200px)
 
     {
         html, body
@@ -78,6 +78,17 @@
         #widescreen h1
         {
             display: block;
+        }
+    }
+    @media(max-height: 500px)
+    {
+        html, body
+        {
+            background: purple;
+        }
+        #landscape h1{
+            display: block;
+
         }
     }
 
