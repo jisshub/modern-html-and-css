@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex alignment and Order </title>
+</head>
+<style>
+    #container
+    {
+        background: #555555;
+        display: flex;
+        flex-wrap: wrap;
+        /* alignment properties  */
+        /* 1. justify-content -- to align along horizontal axis */
+        justify-content: flex-start; 
+        /* flex-start is default alignment ie to elft */
+        justify-content: flex-end;
+        /* opp of flex-start */
+        justify-content: space-around;
+        /* space-around gives space around flex item */
+        justify-content: space-between;
+        /* removes space from items at the ends. */
+        justify-content: space-evenly;
+        /* similar to space-around */
+
+        /* 2. align-items  -- to align along vertical axis.(must specify a height property)  */
+        align-items: flex-start;
+        /* flex-start -- default. ie alignes at the top of the axis */
+        align-items: flex-end;
+        /* flex-end -- aligned at the bottom of the container */
+        align-items: stretch;
+        /* stretch -- stretch the flexbox vertically to the height of the container */
+        align-items: center;
+        /* align items to the center of the container. */
+
+        height: 500px;
+
+  
+    }
+
+    div.item
+    {
+        background: lightslategray;
+        border: solid 1px #333333;
+        text-align: center;
+        margin: .8rem;
+        padding: .5rem;
+        /* flex-basis use dot set the width for each flex item */
+        flex-basis: 200px;
+    }
+
+</style>
+<body>
+    <div id="container">
+        <div class="item item-1"><h3>item 1</h3></div>
+        <div class="item item-2"><h3>item 2</h3></div>
+        <div class="item item-3"><h3>item 3</h3></div>
+     
+    </div>
+
+    
+</body>
+</html>

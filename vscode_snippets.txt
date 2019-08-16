@@ -1,0 +1,1 @@
+ctrl + v -- to copy paste a line no of times
