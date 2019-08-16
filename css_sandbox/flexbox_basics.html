@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox Basics</title>
+</head>
+<style>
+    #container
+    {
+        /* by default display: flex shows elements in row wise or horizontally */
+        display: flex;
+        /* if v set flex-direction as column, all element will be displayed in diff. columns */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; -- same as using display:flex;
+        /* flex-direction: row-reverse; */
+
+        /* to wrap the flex items andto appear on the next line of the page. */
+        flex-wrap: wrap;
+        
+    }
+
+    div.item
+    {
+        background: grey;
+        border: #cccccc solid 1px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 1rem;
+        /* to cover whole items in the entire window, set same width
+        for flex item by, flex:1 */
+        flex: 1;
+    }
+
+    .item:first-child
+    {
+        /* more width for first item */
+        /* this manner we can specify diff width for each element */
+        flex: 2;
+    }
+
+</style>
+<body>
+    <div id="container">
+        <div class="item"><h3>item 1</h3></div>
+        <div class="item"><h3>item 2</h3></div>
+        <div class="item"><h3>item 3</h3></div>    
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <div class="item"><h3>item 3</h3></div>
+        <!-- here v add many items, so all this items will be aligned horizontally 
+        whwich adds  a scroll bar. so if want to appear the elements on next line after max
+        width of the browser, we nee to wrap the flex item
+        to do, set flex: wrap in the container -->
+    </div>
+</body>
+</html>

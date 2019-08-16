@@ -575,17 +575,54 @@ Image Round Shape--
 --view port height or vh
 
 view port is whole area inside the browser.
- each view port height is slice that goes across the page
-there is always 100 vh for each slice
 
 vh of 100 covers entire browser area. 
+each vh is a slice .
+if vh is 1. then it is slice 1.
+so, there is total of 100 slice in a browser
 
 
 
 --view port width or vw
 
-each vw is a slice that goes down the page.
-and each slice has a vw of 100.
+a vw of 100 takes full width of a browser from left to right.
+
+
+
+
+Flexbox
+----------
+
+--flex is a value assigned to the display property
+
+--allows to align elements in the page without using 
+float property.
+
+-- if v assign display: flex; to a container element,
+    it creates a flex container. then each element in that  
+   flex container will be a flex item.
+    by default, display: flex aligns all the child elements horizontally.
+
+
+   #container
+    {
+        /* by default display: flex shows elements in row wise or horizontally */
+        display: flex;
+        /* if v set flex-direction as column, all element will be displayed in diff. columns */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; -- same as using display:flex;
+        /* flex-direction: row-reverse; */
+        
+    }
+
+    
+
+
+    
+
+
+
 
 
 
