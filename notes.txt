@@ -616,15 +616,59 @@ float property.
         
     }
 
-    
+flex-wrap: wrap;
+-----------------
+to wrap the flex items to another line.
+
+flex-wrap property -- shud be specified in the flex container.   
 
 
-    
+flex-basis: 200px;
+-----------
+used to set the flex item width.
+
+
+alignment propeprty
+-----------------------
+ 1. justify-content -- to align along horizontal axis 
+
+justify-content: flex-start; 
+ flex-start is default alignment ie to elft 
+justify-content: flex-end;
+ opp of flex-start 
+justify-content: space-around;
+ space-around gives space around flex item 
+justify-content: space-between;
+ removes space from items at the ends. 
+justify-content: space-evenly;
+ similar to space-around 
+
+ 2. align-items  -- to align along vertical axis.(must specify a height property)  
+
+align-items: flex-start;
+ flex-start -- default. ie alignes at the top of the axis 
+align-items: flex-end;
+ flex-end -- aligned at the bottom of the container 
+align-items: stretch;
+ stretch -- stretch the flexbox vertically to the height of the container 
+align-items: center;
+ align items to the center of the container. 
+height: 500px;
 
 
 
+3. align-content - align vertiaclly when there is extra space 
+ align-content: center; 
+        --align the contents to the center 
 
+4.align-self
+-- to align an individual item, use align-self for that item 
+sample,
 
-
+.items.item-2
+{
+    align-self: center;
+     here item-2 will b aligned center 
+}
 
 
