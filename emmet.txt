@@ -1,0 +1,9 @@
+.item{<h3>item $</h3>}*4   -- this emmet roperty creates 4 divs with class items, each contains an h3 with incrementing items
+
+output:
+<div class="item"><h3>item 1</h3></div>
+<div class="item"><h3>item 2</h3></div>
+<div class="item"><h3>item 3</h3></div>    
+<div class="item"><h3>item 4</h3></div>
+
+
