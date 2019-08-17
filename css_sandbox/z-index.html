@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Z-index</title>
+</head>
+<style>
+    img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* if v set z-index: 1, img is seen abv the text.
+        if z-index: 0, img is seen behind the text */
+    }
+</style>
+<body>
+    <h1>Z-index Property</h1>    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi non ipsa ducimus alias beatae nesciunt modi cum consectetur veritatis corporis voluptatum, error quos blanditiis odit libero est vitae temporibus? Sequi.</p>
+    <img src="./img/sample_login.png" alt="image-leaf">
+</body>
+</html>
