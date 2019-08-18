@@ -664,11 +664,44 @@ height: 500px;
 4.align-self
 -- to align an individual item, use align-self for that item 
 sample,
-
+align
 .items.item-2
 {
     align-self: center;
      here item-2 will b aligned center 
 }
+
+
+
+z-index
+--------
+
+    img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* if v set z-index: 1, img is seen abv the text.
+        if z-index: 0, img is seen behind the text */
+    }
+
+z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).
+
+url: https://www.w3schools.com/cssref/pr_pos_z-index.asp
+
+
+
+
+--transparency / opacity
+---------------------------
+
+ background-color: rgba(0, 0, 0, .4)
+
+here rgba(red,blue,green, alpha)
+
+alpha means amount of opacity for the background-color.
+
+
 
 
