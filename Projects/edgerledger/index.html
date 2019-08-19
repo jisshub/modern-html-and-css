@@ -13,6 +13,8 @@
     <script src="https://kit.fontawesome.com/0bcda0c8ae.js"></script>
 </head>
 <body>
+
+    <!-- Navigation Bars -->
    <nav id="navbar">
        <h1 class="logo">
            <!-- here word Edge and icon have same color so put both in span class -->
@@ -28,6 +30,8 @@
            <li class="same"><a href="#contact">Contact</a></li>
        </ul>
     </nav>  
+    
+    <!--Showcase Header  -->
     <header>
         <div id="showcase">
             <div class="showcase-content">
@@ -40,10 +44,12 @@
                 <a class="btn" href="#what">Read More</a>
             </div>
         </div>
-
     </header>
-    <!-- bg-light class - to make bg appear light color and pad-1 class for to give padding for the section on top and bottom -->
-    <section id="what" class="bg-light pad-1">
+
+    <!-- Section -1 : What We Do -->
+    <section id="what" class="bg-light">
+            <!-- bg-light class - to make bg appear light color and pad-1 class for to give padding for the section on top and bottom -->
+
         <div class="container">
             <h2 class="m-head text-center">
                <span class="text-primary">What</span> We Do
@@ -74,9 +80,34 @@
                 </div>
         </div>
         <!-- </div> -->
-
     </section>
-    
+
+    <!-- Section-2: Who We Are -->
+    <!-- here a flexbox wth two flex items one is bgimage and one is details -->
+    <!-- here section is itself a flex container, two divs- one for bgimage and second div for details at right -->
+    <section id="who">
+        <div id="who-img"></div>
+        <div id="who-contents">
+            <h2 class="m-head">
+                <span class="text-primary">Who</span>
+                We Are
+            </h2>
+            <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, repellendus! Modi dolorum id cum laborum architecto, eius, distinctio nobis ea corrupti exercitationem cumque inventore voluptatum sapiente, est quas nulla ratione.
+            </p>
+            <h3>Our Team</h3>
+            <ul id="list-1">
+                <li>Mark Smith: CEO</li>
+                <li>Shannon Johnson: CFO</li>
+                <li>John Corbit: Lead Accountant</li>
+                <li>Janet Williems: Investment Manager</li>
+                <li>Kara Jackson: Senior Accountant</li>
+
+            </ul>
+        </div>
+     </section>
+
+
 
     
 </body>

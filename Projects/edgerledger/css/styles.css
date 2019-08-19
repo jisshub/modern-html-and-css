@@ -22,7 +22,10 @@ p
 {
     padding: .7rem 0px
 }
-
+li
+{
+    list-style: none;
+}
 
 
 /* utility Classes */
@@ -55,12 +58,10 @@ p
     margin: 1rem 0;
     border: none;
 }
-
 .btn:hover
 {
     background: #50A350;
 }
-
 .bg-light
 {
     background: lightgrey;
@@ -81,13 +82,13 @@ p
     padding: 0 2rem;
     overflow: hidden;
 }
-
 .m-para
 {
     font-size: .9rem;
     padding: 1.2rem 0;
     line-height: 1.2rem;
 }
+
 
 /* NavBar */
 #navbar
@@ -124,6 +125,8 @@ p
     border-radius: 5px;
 
 }
+
+
  /* Showcase Header */
 #showcase
  {
@@ -172,4 +175,28 @@ p
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+
+/* Section2: Who We Are */
+/* here sectioni is made as a flex container */
+/* snce no any containers is not needed here */
+
+#who
+{
+    display: flex;
+}
+
+/* we set flex 1 for divs in that section, so they hav same width */
+#who div{
+    flex: 1;
+}
+
+#who #who-img
+{
+    background: url('../img/people.jpg') no-repeat center center/cover;
+}
+div#who-contents
+{
+    padding-left: 2rem;
 }
