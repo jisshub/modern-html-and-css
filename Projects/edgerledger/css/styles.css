@@ -30,6 +30,31 @@ p
 {
     color: #11B211;
 }
+/* heading */
+.l-head
+{
+    font-size: 4rem;
+}
+/* paragraph */
+.lead{
+    font-size: 1.3rem;
+}
+/* read more link */
+.btn{
+    display: inline-block;
+    padding: .7rem 1.7rem;
+    background: #65CC65;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1rem 0;
+    border: none;
+}
+
+.btn:hover
+{
+    background: #50A350;
+}
 
 /* NavBar */
 #navbar
@@ -94,24 +119,5 @@ p
    
     
 }
-#showcase .showcase-content h1
-{
-    font-size: 4rem;
-}
 
-#showcase .showcase-content p{
-    font-size: 1.2rem;
-}
-#showcase .showcase-content a{
-    padding: .6rem;
-    width: 130px;
-    background: #65CC65;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 5px;
-    margin: 1rem 0;
-}
-#showcase .showcase-content a:hover
-{
-    background: #50A350;
-}
+

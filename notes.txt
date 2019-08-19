@@ -703,5 +703,26 @@ here rgba(red,blue,green, alpha)
 alpha means amount of opacity for the background-color.
 
 
+.btn selectror
+-----------------------
+
+.btn{
+    display: inline-block;
+    padding: .6rem;
+    width: 130px;
+    background: #65CC65;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1rem 0;
+    border: none;
+}
+
+always add display: inline-block for the links . since then v can add width, height, padding, magin effcetively to it.
+
+also add border: none, since v may add this same class to an actual button, it shud not have any borders.
+
+
+
 
 
