@@ -35,6 +35,11 @@ p
 {
     font-size: 4rem;
 }
+.m-head
+{
+    font-size: 1.7rem;
+    margin: 1.2rem 0;
+}
 /* paragraph */
 .lead{
     font-size: 1.3rem;
@@ -54,6 +59,34 @@ p
 .btn:hover
 {
     background: #50A350;
+}
+
+.bg-light
+{
+    background: lightgrey;
+}
+.text-center
+{
+    text-align: center;
+}
+.text-primary
+{
+    color: #11B211;
+}
+.container
+{
+
+    max-width: 960px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.m-para
+{
+    font-size: .9rem;
+    padding: 1.2rem 0;
+    line-height: 1.2rem;
 }
 
 /* NavBar */
@@ -92,7 +125,7 @@ p
 
 }
  /* Showcase Header */
- #showcase
+#showcase
  {
      background: #333333 url('../img/showcase.jpg')
      no-repeat center center/cover;
@@ -117,7 +150,26 @@ p
 
    background-color: rgba(0, 0, 0, .5)
    
-    
 }
 
 
+/* Section: What We Do */
+#what .items{
+    /* make flex container */
+    display: flex;
+    padding: 1rem;
+}
+/* Styling each item */
+#what .item{
+    /* set flex: 1 so each items shares same width in the section.s */
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+/* Styling each icons */
+#what .items .item i{
+    background: #11B211;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
