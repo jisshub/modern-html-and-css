@@ -42,6 +42,7 @@ li
 {
     font-size: 1.7rem;
     margin: 1rem 0;
+    padding-top: .8rem;
    
 }
 /* paragraph */
@@ -100,9 +101,9 @@ li
 }
 .underline
 {
-    border-bottom: 1px dotted;
-    
+    border-bottom: 1px dotted #444444; 
 }
+
 
 /* NavBar */
 #navbar
@@ -229,4 +230,31 @@ div.who-contents
 }
 .who-contents ul{
     margin-bottom: 2rem;
+}
+
+
+/* Section-3: Our Clients */
+
+
+/*
+#clients.logo
+{
+    flex: 1;
+    padding: 2rem;
+    flex-basis: 100px; 
+} */
+
+#clients .logos .logo img
+{
+    width: 120px;
+}
+#clients .logos
+{
+    display: flex;
+    padding: 1.5rem;
+}
+#clients .logos .logo
+{
+    flex: 1;
+    padding: 1rem;
 }
