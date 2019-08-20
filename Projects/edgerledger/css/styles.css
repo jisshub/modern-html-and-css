@@ -41,11 +41,13 @@ li
 .m-head
 {
     font-size: 1.7rem;
-    margin: 1.2rem 0;
+    margin: 1rem 0;
+   
 }
 /* paragraph */
 .lead{
-    font-size: 1.3rem;
+    font-size: .9rem;
+    padding: .2rem 0;
 }
 /* read more link */
 .btn{
@@ -64,7 +66,12 @@ li
 }
 .bg-light
 {
-    background: lightgrey;
+    background: #f4f4ff;
+}
+.bg-dark
+{
+    background: #333333;
+    color: #ffffff;
 }
 .text-center
 {
@@ -88,7 +95,14 @@ li
     padding: 1.2rem 0;
     line-height: 1.2rem;
 }
-
+.first-para{
+    font-size: 1.2rem;
+}
+.underline
+{
+    border-bottom: 1px dotted;
+    
+}
 
 /* NavBar */
 #navbar
@@ -195,8 +209,24 @@ li
 #who #who-img
 {
     background: url('../img/people.jpg') no-repeat center center/cover;
+
 }
-div#who-contents
+div.who-contents
 {
     padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding: 1rem 2rem;
+    line-height: 1.5;
+}
+.who-contents #list-1 li
+{
+    font-size: .9rem;
+    padding: .3rem 0;
+    
+}
+.who-contents h3{
+    padding: 1rem 0;
+}
+.who-contents ul{
+    margin-bottom: 2rem;
 }
