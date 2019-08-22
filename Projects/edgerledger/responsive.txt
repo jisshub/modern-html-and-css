@@ -1,0 +1,6 @@
+
+--Widescreen and Tablet View
+
+icons shud be aligned to the left  
+
+so turn each items to a flex container.

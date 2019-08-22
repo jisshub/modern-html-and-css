@@ -314,7 +314,7 @@ div.who-contents
 }
 #contact .maps{
     background: url('../img/map.png') no-repeat center center/cover;
-    flex-basis: 500px;
+    /* flex-basis: 500px; */
 }
 /* footer */
 #footer_pg
