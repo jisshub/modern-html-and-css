@@ -728,3 +728,8 @@ also add border: none, since v may add this same class to an actual button, it s
 
 
 margin: auto -- gives autmatic margin on left and right margin.
+
+
+
+https://www.latlong.net/ -- to get the latitude and longitude.
+

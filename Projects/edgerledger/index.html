@@ -139,32 +139,55 @@
 
      <!-- Section4: Contact Form and Maps -->
 
-     <section id="cont-maps">
-         <div class="contact-form">
-            <h2 class="c-head">Contact Us</h2>
-            <p class="p-lead">Please use the form below to contact us</p>
-            <form action="contact.py" method="get">
-                <div class="basic">
-                    <label for="name">Name</label><br>
-                    <input type="text" name="grab_name" id="name" placeholder="Enter Namee"><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="grab_mail" id="email" placeholder="Enter Email"><br>
-                    <label for="phone">Phone Number</label><br>
-                    <input type="number" name="grab_no" id="phone" placeholder="Enter Phone"><br>
-                    <label for="message">Message</label><br>
-                    <textarea name="grab_msg" id="message" cols="30" rows="10" placeholder="Enter Message"></textarea><br>
+     <section id="contact">
+         <div class="contact-form bg-primary p-2">
+            <h2 class="cont-head">Contact Us</h2>
+            <p>Please use the form below to contact us</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="grab_name" id="name" placeholder="Enter Name">
                 </div>
-                <div class="sub">
-                    <input type="submit" value="Send">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="grab_mail" id="email" placeholder="Enter Email">
                 </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="grab_no" id="phone" placeholder="Enter Phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="grab_msg" id="message" placeholder="Enter Message"></textarea>
+                </div>
+                    <input type="submit" value="Send" class="btn btn-dark">
+                
            </form>
          </div>
          <div class="maps">
-             
          </div>
+             
+         
      </section>
 
+     <!-- Footer of the Page -->
+
+     <footer id="footer_pg">
+         <!--  -->
+             <p>Copyright &copy; 2019, EdgeLedger, All Rights Reserved</p>
+     <!--  -->
+     </footer>
+
+     <!-- local js file -->
+     <script src="./js/main.js"></script>
+
+     <!-- Google Maps -->
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1n5JTf1-sbNndXSx-PX9210RRZIj2Wq4&callback=initMap"
+     async defer></script>
+     <!-- here linking to the maps api and has callback equals initMap -->
+     <!-- here initMap is a function in the main.js file -->
 
     
 </body>
 </html>
+

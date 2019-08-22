@@ -114,9 +114,30 @@ input{
     border-bottom: 1px dotted #444444; 
 }
 
+/*contact section  */
+.bg-primary
+{
+    background: #93cb52;
+    color: #ffffff;
+}
 
+/* give dark bg and make text color white */
+.btn-dark
+{
+    background: #333333;
+    color: #ffffff;
+}
 
+/* gave padding aroung the form */
+.p-2 { padding: 2rem; }
 
+.cont-head
+{
+    font-size: 2rem;
+    margin-bottom: .7rem;
+    line-height: 1.1;
+}
+  
 /* NavBar */
 #navbar
 {
@@ -264,56 +285,43 @@ div.who-contents
 }
 
 /* Contact Section */
-.contact-form
-{
-    background: #50A350;
-    
-}
-
-
-.c-head, .p-lead
-{
-    color: #ffffff;
-    /* padding-left: 1.5rem; */
-    /* padding-top: 1.5rem; */
-}
-section#cont-maps
+#contact
 {
     display: flex;
+    
 }
-#cont-maps .c-head{
-    padding: 2rem 0 0 2rem;
-    font-size: 2rem;
-}
-#cont-maps .p-lead
+#contact .contact-form, #contact .maps
 {
-    padding-left: 2rem;
+    flex: 1;
+    
 }
-#cont-maps .basic
+#contact .contact-form .form-group
 {
-    padding-left: 3rem;
+    margin: .7rem;
 }
-#cont-maps .sub input
+/* here v make the label as block element so it appears top of the input element*/
+#contact .contact-form label
 {
-    padding: .6rem;
-    margin: 1.5rem;
-    width: 450px;
+    display: block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea
+{
+    /* give width for input and textarea */
+    width: 100%;
+    /* padding inside input and textarea */
+    padding: .5rem;
+}
+#contact .maps{
+    background: url('../img/map.png') no-repeat center center/cover;
+    flex-basis: 500px;
+}
+/* footer */
+#footer_pg
+{
     background: #333333;
-    color: #f4f4f4;  
-    border: none;
-    border-radius: 5px;  
-}
-#cont-maps .basic input{
-    width: 400px;
-    padding: .5rem;
-    margin-top: .2rem;
-
-}
-#cont-maps .basic textarea
-
-{
-    width: 400px;
-    height: 60px;
-    margin-top: .2rem;
-    padding: .5rem;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1.6rem 0;
+    /* margin-top: .7rem; */
 }
