@@ -13,7 +13,7 @@ function initMap() {
   }
   
    // Sticky menu background
-  // n js there is a window obj, which is the whole browser.
+  // in js there is a window obj, which is the whole browser.
   // & when v scroll down the browser more than 150 then opacity of navbar is set to 0.9.
   // and if not scroll more than 150, opacity is set to 1, which means not transparent
   window.addEventListener('scroll', function() {

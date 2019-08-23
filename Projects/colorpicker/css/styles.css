@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul{
+    list-style: none;
+}
+
+
+/* Navbar */
+#navbar
+{
+    background: rgb(231, 230, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* align-content: flex-end; */
+}
+#navbar h1{
+    padding: 1rem;
+    color: #1D2C59;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    height: 70px;
+
+}
+/* give padding and margin for each flex item */
+#navbar ul li a{
+    padding: 1rem;
+    margin: 0 .75rem;
+}
+#navbar  i{
+    color: #00CED1;
+}
+
+#navbar ul li a:hover
+{
+    background: #1D2C59;
+    color: #f4f4f4;
+    border-radius: 10px;
+}
