@@ -40,7 +40,7 @@ ul{
 #navbar ul{
     display: flex;
     align-items: center;
-    height: 70px;
+
 
 }
 /* give padding and margin for each flex item */
@@ -57,4 +57,44 @@ ul{
     background: #1D2C59;
     color: #f4f4f4;
     border-radius: 10px;
+}
+
+/* Header section -1 */
+
+#head-contents 
+{
+    display: flex;
+    justify-content: space-between;
+    background: #f4f4f4;
+    /* align-items: center; */
+
+}
+#head-contents .para-1
+{
+    padding: 1rem;
+    
+}
+#head-contents .support
+{
+    display: flex;
+}
+#head-contents .support .icons
+{
+    padding: 1rem 2rem;
+}
+
+hr{
+    border: 1px solid #95A5A6;
+    height: 100%;
+}
+
+#head-contents .support .icons i:hover, h4:hover
+{
+    color: #00CED1;
+}
+
+/* to add space between text and icon */
+.icons2 .fa-fw
+{
+    padding-right: 1.5rem;
 }
