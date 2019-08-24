@@ -104,16 +104,14 @@ hr{
 #colors
 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around;    
 }
 
 #colors .colorbox-1
 {
     padding: 2rem;
     flex: 1;
-    cursor: pointer;  
-    
+    cursor: pointer; 
 }
 #colors .each
 {
