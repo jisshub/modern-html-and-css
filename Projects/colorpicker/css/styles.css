@@ -9,6 +9,7 @@
 
 html, body{
     font-family: 'Roboto', sans-serif;
+    /* set height of browser*/
     height: 100%;
 }
 
@@ -67,7 +68,9 @@ ul{
     display: flex;
     justify-content: space-between;
     background: #f4f4f4;
-    /* align-items: center; */
+    
+ 
+    align-items: center;
 
 }
 #head-contents .para-1
@@ -81,12 +84,7 @@ ul{
 }
 #head-contents .support .icons
 {
-    padding: 1rem 2rem;
-}
-
-hr{
-    border: 1px solid #95A5A6;
-    height: 100%;
+    padding: 1.3rem 2rem;
 }
 
 #head-contents .support .icons i:hover, h4:hover
@@ -101,10 +99,19 @@ hr{
 }
 
 /* SECTION-1 : COLORS */
-#colors
+#colors .container
 {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;   
+    /* by positioning absolute it is relative to its parent element body
+    so if body takes 100%, this div also takes same height */
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    overflow: hidden;
+    
 }
 
 #colors .colorbox-1
@@ -136,4 +143,24 @@ hr{
 #colors .each5
 {
     background: #A40606;
+}
+
+.var
+{
+    text-align: center;
+    padding-top: 20rem;
+}
+.var .hexa
+{
+    font-size: 2rem;
+}
+
+.var .hexa:hover
+{
+    color: #f4f4f4;
+}
+.var .name
+{
+    padding: 1rem;
+    color: #333333;
 }
