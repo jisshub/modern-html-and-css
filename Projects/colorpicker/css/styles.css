@@ -7,8 +7,9 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 a{
@@ -97,4 +98,44 @@ hr{
 .icons2 .fa-fw
 {
     padding-right: 1.5rem;
+}
+
+/* SECTION-1 : COLORS */
+#colors
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#colors .colorbox-1
+{
+    padding: 2rem;
+    flex: 1;
+    cursor: pointer;  
+    
+}
+#colors .each
+{
+    background: #1D2C59;
+}
+
+#colors .each2
+{
+    background: #3C6997;
+}
+
+#colors .each3
+{
+    background: #D03B71;
+}
+
+#colors .each4
+{
+    background: #C1C1C1;
+}
+
+#colors .each5
+{
+    background: #A40606;
 }

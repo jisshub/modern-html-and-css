@@ -733,3 +733,29 @@ margin: auto -- gives autmatic margin on left and right margin.
 
 https://www.latlong.net/ -- to get the latitude and longitude.
 
+
+
+
+height: 100%  and height: 100px -- difference
+---------------------------------------
+
+if v set height: 100% -- it takes the eaxct height of div element.
+if v set height: 100px  -- extra height will be added to the actual height of the element.
+
+
+exampl:
+
+hr{
+    border: 1px solid #95A5A6;
+    height: 100%;
+}
+
+consider here v place hr after div element which is displayed flex.
+so it will appear as vertical line. and want to set a height for that line.
+if v set height: 100% -- hr takes the exact height of div
+if height: 100px -- adds more px of height to the height of div. so line hav more height. (not good option)
+
+
+
+
+
