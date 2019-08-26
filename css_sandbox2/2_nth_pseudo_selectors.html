@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+</head>
+<style>
+    li{
+        padding: .5rem;
+        margin: .5rem;
+        list-style: none;
+    }
+    /* first child */
+    li:first-child
+    {
+        background: red;
+    }
+
+    /* last child */
+    li:last-child
+    {
+        background: green;
+    }
+
+    /* nth child */
+    /* eg: 3rd child */
+    li:nth-child(3)
+
+    {
+        background: purple;
+    
+        width: 100px;
+        height: 50px;
+    }
+    
+    /* every 3rd child */
+    li:nth-child(3n)
+    {
+        background: lightblue;
+    }
+
+    /* every odd element */
+    li:nth-child(odd)
+    {
+        background:orangered;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+
+    /* every even element */
+    li:nth-child(even)
+
+    {
+        background: grey;
+        color: #f4f4f4;
+    }
+
+</style>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+        <li>item 9</li>
+        <li>item 10</li>
+        <li>item 11</li>
+        <li>item 12</li>
+        <li>item 13</li>
+        <li>item 14</li>
+        <li>item 15</li>
+        <li>item 16</li>
+        <li>item 17</li>
+        <li>item 18</li>
+        <li>item 19</li>
+        <li>item 20</li>
+    </ul>    
+</body>
+</html>

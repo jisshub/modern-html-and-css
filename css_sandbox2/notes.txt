@@ -1,0 +1,75 @@
+---div + p
+
+which targets the p element that comes directly after  the div,
+not traget any p inside the div.
+
+--div > p
+targets  direct child p of div.
+
+
+* styling based on attribute */
+
+    /* here v style the a tag with target attrbiute */
+    a[target]
+    {
+        color: #ff45ff;
+    }
+
+/* styling based on attrbute values  */
+
+    /* styled <a> tag with attribute: value is target: _self */
+    a[target = '_self']
+    {
+        text-decoration: none;
+    }
+
+
+
+
+ /* first child */
+    li:first-child
+    {
+        background: red;
+    }
+
+    /* last child */
+    li:last-child
+    {
+        background: green;
+    }
+
+    /* nth child */
+    /* eg: 3rd child */
+    li:nth-child(3)
+
+    {
+        background: purple;
+    
+        width: 100px;
+        height: 50px;
+    }
+    
+    /* every 3rd child */
+    li:nth-child(3n)
+    {
+        background: lightblue;
+    }
+
+    /* every odd element */
+    li:nth-child(odd)
+    {
+        background:orangered;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+
+    /* every even element */
+    li:nth-child(even)
+
+    {
+        background: grey;
+        color: #f4f4f4;
+    }
+
+
