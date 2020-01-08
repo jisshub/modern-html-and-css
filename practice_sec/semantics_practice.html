@@ -6,16 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Semantic Tags</title>
 </head>
-<body>
-    <header>
-        <h1>Product Page</h1>
-        <nav>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
+<style>
+    #head_page
+    {
+        background-color: black;
+        color: #ffffff;
+        text-align: center;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .article-1
+    {
+        background-color: darkgray;
+        padding: 1rem 3rem;
+        margin: 0 2rem 0 2rem;
+        display: flex;
+    }
 
-        </nav>
+
+    .article-2
+    {
+        background-color: darkgray;
+        padding: 1rem 3rem;
+        margin: 2rem 2rem 0 2rem;
+    }
+
+</style>
+<body>
+    <header id="head_page">
+        <h1>Product Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam, magni obcaecati quibusdam earum accusamus, tenetur possimus ipsam recusandae quaerat, explicabo beatae quis. Quibusdam ipsa saepe officia, voluptatem nesciunt facilis?</p>
+   
     </header>
-        
+
+    <!-- main content -->
+    <main id="main-content">
+        <section id="main_content">
+            
+            <h2>Product Data's</h2>
+            <article class="article-1">
+                <h3>Mobile Phone</h3>
+                <div>
+                    <img src="../screenshots/Screenshot from 2019-06-04 19-37-01.png" alt="mobile" width="300">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas sunt perferendis doloremque aut reprehenderit tenetur iste laboriosam expedita? Expedita odio ullam non, obcaecati consequatur dicta sequi voluptate ea ipsam.
+                    </p>
+                </div>
+            </article>
+            <article class="article-2">
+                <h3>Hard Disk</h3>
+                <div>
+                    <img src="../screenshots/Screenshot from 2019-06-04 19-37-01.png" alt="mobile" width="300">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas sunt perferendis doloremque aut reprehenderit tenetur iste laboriosam expedita? Expedita odio ullam non, obcaecati consequatur dicta sequi voluptate ea ipsam.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <aside>
+      
+        <!-- Navigations -->
+        <h3>Navigations</h3>
+        <nav id="nav_id">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+        </nav>
+        <h4>Contact Us</h4>
+        <ul>
+            <li><strong>Address:</strong>Lorem ipsum dolor sit amet.</li>
+            <li><strong>phone: </strong>4634</li>
+            <li><strong>Email: </strong>jissmon476@gmail.com</li>
+        </ul>
+    </aside>
+    <footer id="footer">
+        <p id="footer_class">
+            Copyright &copy;2020
+        </p>
+    </footer>
 </body>
 </html>
