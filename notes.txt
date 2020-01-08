@@ -1,9 +1,16 @@
+what is html?
+
+used to structure content on a web page such as image, text, forms ...
+
+web structe content use html tags such as img, p, a, div..
+
+
 doctype tell what type of document is
 
 such as html xml xhtml..
 
 
-deaclare document as html5
+declare document as html5
 
 --metatags:
 Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
@@ -28,6 +35,7 @@ strong tag makes text pro,em tag makes text italics
 
 <br> line break.
 
+<hr> - horizontal rule  : it craete a horizontal line.
 
 <a> tag represent links and  it is an inline elements which means all a tag appears
 in just one line if not separated by p tag or line breaker ..
@@ -121,7 +129,7 @@ inline elements elements does not take full page.
 it onlytakes wha its needed.
 so if we write anything after inline elements it will shown up right of the inline element
 dont take new line
-eg: link element 'a' and image element img
+eg: link element 'a' and image element img.
 
 
 --id and classes
