@@ -30,7 +30,7 @@ strong tag makes text pro,em tag makes text italics
 
 
 <a> tag represent links and  it is an inline elements which means all a tag appears
-in just one line if not separated by p tag of line breaker ..
+in just one line if not separated by p tag or line breaker ..
 a tag have href attribute - it is the location we ar linking to
 
 target="_blank" : open in new tab
