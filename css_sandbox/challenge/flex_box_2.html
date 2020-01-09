@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex box Alignment</title>
+</head>
+<style>
+    div#container
+    {
+        display: flex;
+        /* align long horizontaly */
+        justify-content: flex-start;
+        justify-content: space-around;
+        justify-content: flex-end;
+        justify-content: space-between;
+        justify-content: space-evenly; 
+        
+        height: 500px;
+       align-items: center;
+    }
+    div.item
+    {
+        background: lightcoral;
+        border: lightgreen solid 3px;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        flex-basis: 100px;
+
+    }
+
+</style>
+<body>
+    <div id="container">
+        <div class="item item-1"><h3>item1</h3></div>
+        <div class="item item-2"><h3>item2</h3></div>
+        <div class="item item-3"><h3>item3</h3></div>
+    </div>
+</body>
+</html>

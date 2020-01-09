@@ -4,42 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flex Align</title>
+    <title>Flexbox Part-3</title>
 </head>
 <style>
     #container
     {
-        flex-wrap: wrap;
+        background: gray;
         display: flex;
-        background: #555555;
         height: 500px;
-        justify-content: center;
-        align-items:flex-start;
-        
-    }
-
-    /* to align an individual item, use align-self for that item */
-    .items.item-2
-    {
-        align-self:center
-        /* here item-2 will b aligned center */
     }
     .items
     {
-        background: darkgrey;
-        border: 1px solid #333333;
-        text-align: center;
-        padding: .5rem;
-        margin: .8rem;
-        flex-basis: 200px;
+        background: greenyellow;
+        margin: 1rem;
+        padding: 1rem;
+        flex-basis: 100px;
+
+    }
+    .items.item-2
+    {
+        align-self: center;
     }
 </style>
 <body>
+    <h1>
+        Flexbox Align
+    </h1>    
     <div id="container">
         <div class="items item-1"><h3>item-1</h3></div>
         <div class="items item-2"><h3>item-2</h3></div>
         <div class="items item-3"><h3>item-3</h3></div>   
-  
-     </div>
+    </div>
 </body>
 </html>
