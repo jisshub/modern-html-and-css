@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box-Sizing</title>
+</head>
+<style>
+
+    div.box-1
+    {
+        background-color: darkorchid;
+        width: 300px;
+        height: 100px;
+        margin: auto;
+        padding: 50px;
+        border: 2px solid;
+
+
+    }
+    div.box-2{
+        background-color: darkred;
+        width: 300px;
+        height: 100px;
+        margin: 30px auto;
+        padding: 30px;
+        border: 2px solid;
+    }
+    .box
+    {
+        box-sizing: border-box;
+       /* padding and border are added with actual width and heightn not added seperatly */
+    }
+</style>
+<body>
+    <h1>
+        Box Sizing
+    </h1>
+    <div class="box box-1">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </p>
+    </div>
+
+    <div class="box box-2">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </p>
+    </div>
+</body>
+</html>
