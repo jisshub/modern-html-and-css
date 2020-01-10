@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS POSITIONS</title>
+</head>
+<style>
+    html,body{
+        height: 2000px;
+    }
+    /* static */
+  #static
+  {
+      position: static;
+      background-color: cadetblue;
+      border: 3px solid #737373;
+
+      /* cant adjust the positions to left, top, right, bottom if it is static */
+      /* left: 100px; */
+  }
+  /* relative */
+  .boc-1
+  {
+      margin-top: 30px;
+      position: relative;
+      background-color: chartreuse;
+      border: 3px solid #773355;
+      left: 50px;
+      top: 50px;
+      /* if relative we can move the element anywhere in the window */
+
+  }
+  /* relative */
+  .box
+  {
+      margin-top: 30px;
+      position: relative;
+      background-color: lightcoral;
+      border: 3px solid #454545;
+      height: 200px;
+      width: 400px;
+      top: 50px;
+
+  }
+  /* absolute */
+  .boc-3
+  {
+     position: absolute;
+     padding: 10px;
+     width: 200px;
+     border: 2px solid greenyellow;
+     left: 40px;
+     top: 20px;
+  }
+  /* absolute position always relative to its parent positioning */
+
+  /* fixed */
+  /* here element is fixed at its position */
+  .box-4
+  {
+      background-color: maroon;
+      border: 3px solid #454545;
+      padding: 30px;
+      width: 300px;
+      top: 100px;
+      position: fixed;
+  }
+
+  /* sticky */
+  /* here once box reaches top it sticks there */
+  .box-5
+  {
+      background-color: yellow;
+      border: 3px solid #454545;
+      padding: 30px;
+      width: 300px;
+      top: 0;
+      position: sticky;
+  }
+
+
+</style>
+<body>
+    <h1>
+        css positions
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, eum!</p>
+   <div id="static">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sunt.
+   </div>
+   <div class="boc-1">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit necessitatibus ea ab labore quis facere non dicta incidunt suscipit?
+   </div>
+
+   <div class="box">
+    <div class="boc-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit necessitatibus ea ab labore quis facere non dicta incidunt suscipit?
+    </div>
+   </div>
+   <div class="box-4">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum reiciendis similique ea sapiente! Mollitia ipsum eaque tenetur hic dolor!
+   </div>
+    <div class="box-5">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum reiciendis similique ea sapiente! Mollitia ipsum eaque tenetur hic dolor!
+   </div>
+
+</body>
+</html>
