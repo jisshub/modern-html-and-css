@@ -782,3 +782,85 @@ box-shadow: -5px -5px 10px orangered;
 
 
 
+text-shadows
+---------------
+
+
+  h1.a
+    {
+        /* value: horizontal-shadow verticla-shadow color */
+        text-shadow: .2rem .2rem steelblue;
+    }
+    /* can give blur effect */
+    h1.b
+    {
+        /* value: horizontal-shadow vertical-shadow blur-radius color */
+        text-shadow: .2rem .2rem .3rem steelblue;
+    }
+    h1.c
+    {
+        text-shadow: .2rem .2rem .3rem greenyellow;
+    }
+
+
+
+CSS VARIABLES
+--------------
+
+    /* define ccs vairable in root scope */
+    :root
+    {
+        --page_color:#f4f4f4;
+        --primary-color: steelblue;
+        --secondary-color: violet;
+        --box-bg: #ee4455;
+        --box-border: grey;
+        --max-width: 750px;
+        --font-family: monospace;
+        --box-1-width: 3;
+        --box-2-width: 1;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        /* assign the variable to background property using var keyword */
+        background: var(--page_color);
+        line-height: 2;
+    }
+    header{
+        background-color: var(--primary-color);
+        color: #ffffff;
+        text-align: center;
+        border-bottom: 5px var(--secondary-color) solid;
+    }
+    .container
+    {
+        display: flex;
+        max-width: var(--max-width);
+        margin: auto;
+    }
+    .box
+    {
+        background: var(--box-bg);
+        margin: 1rem;
+        border: 3px solid var(--box-border);
+        padding: 1rem;
+       
+        /* justify-content: center; */
+        /* align-content: space-around; */
+        font-family: var(--font-family);
+    }
+    .box-1
+    {
+        flex: var(--box-1-width);
+    }
+    .box-2    {
+        flex: var(--box-2-width);
+    }
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS VARAIBLES</title>
+</head>
+<style>
+
+    /* define ccs vairable in root scope */
+    :root
+    {
+        --page_color:#f4f4f4;
+        --primary-color: steelblue;
+        --secondary-color: violet;
+        --box-bg: #ee4455;
+        --box-border: grey;
+        --max-width: 750px;
+        --font-family: monospace;
+        --box-1-width: 3;
+        --box-2-width: 1;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        /* assign the variable to background property using var keyword */
+        background: var(--page_color);
+        line-height: 2;
+    }
+    header{
+        background-color: var(--primary-color);
+        color: #ffffff;
+        text-align: center;
+        border-bottom: 5px var(--secondary-color) solid;
+    }
+    .container
+    {
+        display: flex;
+        max-width: var(--max-width);
+        margin: auto;
+    }
+    .box
+    {
+        background: var(--box-bg);
+        margin: 1rem;
+        border: 3px solid var(--box-border);
+        padding: 1rem;
+       
+        /* justify-content: center; */
+        /* align-content: space-around; */
+        font-family: var(--font-family);
+    }
+    .box-1
+    {
+        flex: var(--box-1-width);
+    }
+    .box-2    {
+        flex: var(--box-2-width);
+    }
+    
+</style>
+
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, ducimus?</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, numquam?</p>
+        </div>
+    </div>
+</body>
+</html>
