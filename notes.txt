@@ -587,7 +587,7 @@ view port is whole area inside the browser.
 vh of 100 covers entire browser area. 
 each vh is a slice .
 if vh is 1. then it is slice 1.
-so, there is total of 100 slice in a browser
+so, there is a total of 100 slice in a browser
 
 
 
@@ -763,6 +763,22 @@ if v set height: 100% -- hr takes the exact height of div
 if height: 100px -- adds more px of height to the height of div. so line hav more height. (not good option)
 
 
+Box Shadows
+------------------
+
+/* gives shadow to a box on x and y axis */
+/* value order: offset x offset y color */
+box-shadow: 10px 10px orangered;
+/* shadows with blur effect */
+/* value: offset x offset y blur-radius color */
+box-shadow: 10px 10px 20px orangered;
+
+/* box shadows with -ve values */
+/* gives shadows on top and left of box */
+box-shadow: -10px -10px orangered;
+
+/* with blur effect at top and left */
+box-shadow: -5px -5px 10px orangered;
 
 
 

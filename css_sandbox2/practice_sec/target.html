@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targeted PsuedoSelectors</title>
+</head>
+<style>
+
+    /* select direct child of p*/
+    div>p
+    {
+        background-color: #334455;
+    }
+
+    /* styling based on attribute */
+    a[target="_self"]
+    {
+        text-decoration: none;
+        color: purple;
+        background: saddlebrown;
+    }
+</style>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nostrum</p>
+        <ul>
+            <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, laborum?</p></li>
+            <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, labore.</p></li>
+            <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, possimus.</p></li>
+        </ul>
+        <a href="#" target="_self">Welcome</a>
+        <a href="#" target="_target">Hello</a>
+
+    </div>
+</body>
+</html>

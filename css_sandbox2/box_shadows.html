@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box shadows</title>
+</head>
+<style>
+    .container
+    {
+        display: flex;
+        /* flex-wrap: wrap ; */
+        /* flex-direction: column; */
+        
+    }
+    .box-1
+    {
+        background: cadetblue;
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem;
+        padding: 2rem;
+
+        /* gives shadow to a box on x and y axis */
+        /* value order: offset x offset y color */
+        box-shadow: 10px 10px orangered;
+        /* shadows with blur effect */
+        /* value: offset x offset y blur-radius color */
+        box-shadow: 10px 10px 20px orangered;
+
+        /* box shadows with -ve values */
+        /* gives shadows on top and left of box */
+        box-shadow: -10px -10px orangered;
+
+        /* with blur effect at top and left */
+        box-shadow: -5px -5px 10px orangered;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, eos.</p>
+        </div>    
+
+        <div class="box-1">
+            <h3>Heading 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, eos.</p>
+        </div>    
+
+        <div class="box-1">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, eos.</p>
+        </div>    
+    </div>
+</body>
+</html>

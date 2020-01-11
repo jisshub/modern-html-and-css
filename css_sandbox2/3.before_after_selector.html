@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before And After</title>
+</head>
+<style>
+    /* after selector */
+    .is_required::after
+    {
+        content: '*';
+        color: red;
+    }
+    input[type="text"]
+    {
+        width: 100px;
+        height: 100px;
+    }
+    /* before selector */
+    .is_not_required::before
+    {
+        content: '#';
+        color:violet;
+    }
+    .para-1::before
+    {
+        content: '*';
+        color: brown;
+    }
+
+
+</style>
+<body>
+    <label for="name" class="is_required">Name: </label>
+    <input type="text" name="name" id="name">
+    <br><br>
+    <label for="email" class="is_not_required">Email: </label>
+    <input type="email" name="email" id="email">
+    <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, vero?</p>
+</body>
+</html>
