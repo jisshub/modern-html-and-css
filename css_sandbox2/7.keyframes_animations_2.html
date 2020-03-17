@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes_2</title>
+    <style>
+    body{
+        background-color: black;
+    }
+    .box-1{
+        background-color: white;
+        width: 150px;
+        height: 100px;
+        position: relative;
+        /* set the top and left position initially */
+        top: 0;
+        left: 0;
+        animation-name: animate_3;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animate_3 {
+        25%{
+            top: 0;
+            left: 300px;
+        }
+        50%{
+            top: 300px;
+            left: 300px;
+        }
+        75%{
+            top: 300px;
+            left: 0;
+
+        }
+        100%{top: 0; left: 0;}
+        /* 25%{
+            top: 300px;
+            left: 300px;
+        } */
+    }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames in CSS</title>
+    <style>
+        .box-1{
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: animate_2 5s ease-in 2 forwards;
+        }
+
+
+
+        @keyframes animate_2 {
+            from{
+                /* not neccessrary to give width since it already provided in box style */
+                top: 0;
+                border-radius: 2px;
+            }
+            to{
+                width: 800px;
+                top: 500px;
+                border-radius: 20px;
+            }
+        }
+
+     
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <p id="para01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit temporibus illo hic quas fugit repellendus eaque libero laborum. Doloribus!</p>
+
+    </div>
+</body>
+</html>
