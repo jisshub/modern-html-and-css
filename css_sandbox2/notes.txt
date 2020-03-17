@@ -73,3 +73,44 @@ targets  direct child p of div.
     }
 
 
+Animations
+-------------
+using keyframes
+
+ /* name and duration are must have propery for animation */
+      animation-name: animate-div;
+      /* animation duration */
+      animation-duration: 5s;
+      /* ease-in: starts slow but ends fast */
+      /* ease-out: starts fast but ends slow */
+      /* ease-in-out: starts slow, ends slow */
+      animation-timing-function: ease-in;
+      /* count of animation */
+      /* if 3, animation shows 3 times */
+      animation-iteration-count: 2;
+      /* delay 3s bfore animation starts */
+      animation-delay: 2s;
+      /* to stay the animation at the end
+      instead of returning back to 200px */
+      animation-fill-mode: forwards;
+
+      define @rules for keyframes
+     @keyframes animate-div {
+          /* set starting and endng width for animations
+          from {
+              width: 200px; # starts from 200px
+          }
+          to{
+              width: 700px;  #ends at 700px
+          }
+      }
+
+
+using animaition shorut
+----------------------------
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+
+
+
