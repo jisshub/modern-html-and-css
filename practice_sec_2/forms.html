@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+
+        <label for="name">name: </label>
+        <input type="text" name="name" id="name">
+        
+        <label for="phone" >Phone:</label>
+        <input type="number" style="height: 100px;"name="phone" id="phone">
+        
+        <!-- textareA -->
+        <label for="message">Write Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <br>
+        <!-- select tag -->
+        <!-- to have a dropdown selection in the form -->
+        <label for="state">State:</label>
+        <select name="state" id="state">
+            <option value="kerala">kerala</option>
+            <option value="tn" selected>Tamil Nadu</option>
+            <option value="karnataka">karnataka</option>
+        </select>
+
+        <br>
+        <!-- radiobuttons -->
+        <label for="gender">Select gender: </label>
+        <input type="radio" name="gender" id="gender" value="male">
+        Male
+        <input type="radio" name="gender" id="gender" value="female">
+        Female
+        <input type="radio" name="gender" id="gender" value="transgender">
+        Transgender
+
+        <br>
+        <!-- checkbox -->
+        <!-- can sleect multiple boxes in check box -->
+        <label for="hobies">Hobies</label>
+        <input type="checkbox" name="hobies" id="hobies" value="cricket">
+        cricket
+        <input type="checkbox" name="hobies" id="hobies" value="football">
+        football
+
+        <br>
+        <!-- submit -->
+        <input type="submit" value="submit">
+
+        <!-- reset -->
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        div>p{
+            color: red;
+        }
+        div + p{
+            background-color: aqua;
+        }
+        a[target]{
+            color: brown;
+        }
+        input[type= "text"]{
+            color:green;
+        }
+    </style>
+<body>
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>item 1</li>
+            <li>
+                <p> item 2</p>
+            </li>
+            <li>item 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+    <div>
+        <a href="#">Page 1</a>
+        <a href="#">page 2</a>
+        <a href="https://w3schools.com" target="_blank">W3schools</a>
+        <a href="#" target="_self">Page4</a>
+    </div>
+    <div>
+        <form>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="name">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="submit" value="submit form">
+        </form>
+    </div>
+</body>
+</html>
