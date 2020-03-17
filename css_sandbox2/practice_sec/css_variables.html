@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<style>
+    :root{
+        --box_bg: violet;
+        --box_margin: 3em;
+        --h3_border: solid red 6px; 
+        --para_padding: 3rem;
+    }
+    .box{
+        background: var(--box_bg);
+        margin: var(--box_margin)
+    }
+    h3{
+        border: var(--h3_border);
+    }
+    #para01{
+        padding: var(--para_padding);
+    }
+    </style>
+<body>
+    <header>
+        <h1>CSS variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p id="para01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas aut explicabo illum alias beatae laboriosam repudiandae fugiat sunt ipsam?</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p id="para02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptas aut explicabo illum alias beatae laboriosam repudiandae fugiat sunt ipsam?</p>
+        </div>
+    </div>
+</body>
+</html>
