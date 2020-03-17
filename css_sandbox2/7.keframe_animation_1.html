@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+          background: black;
+
+      }  
+      .boc{
+          background: white;
+          width: 200px;
+          height: 200px;
+          /* name abnd duration are must have propery for animation */
+          /* animation-name: animate-div;
+          /* animation duration */
+          /* animation-duration: 5s; */
+          /* ease-in: starts slow but ends fast */
+          /* ease-out: starts fast but ends slow */
+          /* ease-in-out: starts slow, ends slow */
+          /* animation-timing-function: ease-in; */
+          /* count of animation */
+          /* if 3, animation shows 3 times */
+          /* animation-iteration-count: 1; */
+          /* delay 3s bfore animation starts */
+          /* animation-delay: 2s; */
+          /* to stay the animation at the end
+          instead of returning back to 200px */
+          /* animation-fill-mode: forwards; */
+
+          /* can also use shortcut */
+             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+          animation: animate-div 5s ease-in 2  forwards;
+
+          
+      }
+      @keyframes animate-div {
+       
+
+          from {
+              /* starts from width 200px */
+              width: 200px;
+             
+          }
+          to{
+              /* ends at 700px */
+              width: 700px;
+              /* at 700px box turns to given color */
+              background-color: blueviolet;
+           
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="boc"></div>
+    
+</body>
+</html>
