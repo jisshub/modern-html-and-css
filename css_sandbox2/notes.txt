@@ -24,8 +24,6 @@ targets  direct child p of div.
     }
 
 
-
-
  /* first child */
     li:first-child
     {
@@ -165,4 +163,47 @@ here event is hover */
     height: 200px;
 }
 
+
+
+css transform property
+-----------------------
+The transform CSS property lets you rotate, scale, skew, or translate an element
+
+.box{
+    background: white;
+    height: 200px;
+    width: 200px;
+    /* rotate - transform property */
+    transform: rotate(50deg);
+    /* skew - forms a diagonal shape */
+    transform: skew(30deg);
+    /* scale - increases the size of box both horizontal & vertical */
+    transform: scale(4);
+}
+
+
+
+translate() of transform
+--------------------
+.box:hover{
+/* move the box x and y axis using translate function */
+
+/* move 200px to x axis  */
+transform: translateX(200px);
+/* opp of x axis */
+transform: translateX(-200px);
+
+/* move 200px to y axis */
+transform: translateY(200px);
+
+/* opp of Y axis */
+transform: translateY(-200px);
+
+/* move to both x and y axis */
+/* transform(X axis, Y axis) */
+transform: translate(500px, -100px);    
+}
+
+
+more on : https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 
