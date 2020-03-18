@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #333333;
+        /* to appear the box center of page */
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        /* must give a height */
+        height: 100vh;
+    }
+    .box{
+        background: white;
+        width: 100px;
+        height: 100px; 
+        /* transition property */
+        transition: background;
+        /* duration */
+        transition-duration: 3s;   
+        transition-timing-function: ease-in-out;
+        /* delay before transitions */
+        transition-delay: 2s;
+       
+    }
+    /* specify an event */
+    /* transition happens while hovering on it,
+    here event is hover */
+    .box:hover{
+        background: green;
+    }
+</style>
+<body>
+   <div class="box">
+
+   </div> 
+</body>
+</html>

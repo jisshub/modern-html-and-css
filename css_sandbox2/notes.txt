@@ -112,5 +112,57 @@ using animaition shorut
 
 
 
+css transitions
+---------------
+-- transition on single property
+
+.box{
+        background: white;
+        width: 100px;
+        height: 100px; 
+        /* transition property */
+        transition: background;
+        /* duration */
+        transition-duration: 3s;   
+        transition-timing-function: ease-in-out;
+        /* delay before transitions */
+        transition-delay: 2s;
+       
+    }
+
+here v appply transition efects on a box
+for tarnsition to take effect, v have to specify
+an event like hover,
+
+/* transition happens while hovering on it,
+here event is hover */
+.box:hover{
+    background: green;
+}
+
+
+
+-- transition on all properties given in event
+
+
+.box{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    /* transition on all sepcified properties */
+    /* transition: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out; */
+
+    /* shortcut for transition */
+    transition: all 3s ease-in-out;
+}
+.box:hover{
+    /* transition happens on these properties of box*/
+    background: red;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
 
 
