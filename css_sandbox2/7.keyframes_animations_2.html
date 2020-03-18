@@ -16,27 +16,37 @@
         /* set the top and left position initially */
         top: 0;
         left: 0;
+        
         animation-name: animate_3;
         animation-duration: 4s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
     }
+ 
 
     @keyframes animate_3 {
         25%{
             top: 0;
             left: 300px;
+            background: red;
+            border-radius: 10px;
         }
         50%{
             top: 300px;
             left: 300px;
+            background: green;
+            border-radius: 15px;
         }
         75%{
             top: 300px;
             left: 0;
+            background: purple;
+            border-radius: 20px;
 
         }
-        100%{top: 0; left: 0;}
+        100%{top: 0; left: 0;
+        background: maroon;
+        border-radius: 25px;}
         /* 25%{
             top: 300px;
             left: 300px;
@@ -48,6 +58,6 @@
     <div class="box-1">
 
     </div>
-    
+ 
 </body>
 </html>
