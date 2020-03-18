@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames Prcatice</title>
+    <style>
+        body{
+            background: black;
+        }
+        .container
+        {
+            display: flex;
+            /* to remove spaces at end */
+            justify-content: space-between;
+
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        .box-1{
+            background-color: white;
+            animation: animate_box1 4s ease-in-out 2 forwards;
+        
+        }
+        .box-2{
+
+            background-color: rgb(45, 45, 165);
+            animation: animate_box2 4s ease-in-out 2 forwards;
+        }
+        @keyframes animate_box1 {
+            25%{
+                top: 0;
+                left: 400px;
+            }
+            50%{
+                top: 400px;
+                left: 400px;
+            }
+            75%{
+                top: 400px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @keyframes animate_box2 {
+            25%{
+                top: 0;
+                right: 400px;
+            }
+            50%{
+                top: 400px;
+                right: 400px;
+            }
+            75%{
+                top: 400px;
+                right: 0;
+            }
+            100%{
+                top: 0;
+                right: 0;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">
+
+        </div>
+        <div class="box box-2">
+    
+        </div>
+    </div>
+    
+</body>
+</html>
