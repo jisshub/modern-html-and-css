@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            transition: all 2s ease-in-out;
+        }
+        .box:hover{
+            /* apply transform property */
+            /* will rotate 25deg while v hover */
+            transform: rotate(25deg);
+            /* skew 50 deg while hover */
+            transform: skew(50deg);
+            /* increase the box size */
+            transform: scale(2);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
