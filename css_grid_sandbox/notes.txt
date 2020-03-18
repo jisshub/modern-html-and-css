@@ -1,0 +1,36 @@
+grdi-templte-column
+ -- based on the number of columns - provide the 
+    width for each column instead of column count.
+
+for eg: if want 3 columns with 200px width
+grid-template-column: 200px 200px 200px
+
+sample
+----------
+/* style the grid */
+    .grid{
+        display: grid;
+
+        /* specify the width for each columns */
+        grid-template-columns: 200px 200px 200px 200px;
+
+        /* auto value fills the remaining width to fill the page */
+        grid-template-columns: 200px 200px auto auto;
+
+        /* all have same width */
+        grid-template-columns: auto auto auto auto;
+
+        /* using repeat() instead of repeating widrh */
+        /* takes two args - 1. count, 2. column width */
+        grid-template-columns: repeat(4, auto);
+
+        /* using fraction units/fr unit for column width */
+        grid-template-columns: 2fr 1fr 4fr 3fr;
+
+        /* fr units in repeat() */
+        grid-template-columns: repeat(4, 2fr);
+
+        /* space around grids - use grid-gap property*/
+        grid-gap: 2rem;
+    }
+

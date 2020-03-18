@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>css grids</title>
+     <style>
+         /* style the grid */
+         .grid{
+             display: grid;
+             /* specify the width for each columns */
+             grid-template-columns: 200px 200px 200px 200px;
+             /* auto value fills the remaining width to fill the page */
+             grid-template-columns: 200px 200px auto auto;
+             /* all have same width */
+             grid-template-columns: auto auto auto auto;
+             /* using repeat() instead of repeating widrh */
+             /* takes two args - 1. count, 2. column width */
+             grid-template-columns: repeat(4, auto);
+             /* using fraction units/fr unit for column width */
+             grid-template-columns: 2fr 1fr 4fr 3fr;
+             /* fr units in repeat() */
+             grid-template-columns: repeat(4, 2fr);
+             /* space around grids - use grid-gap property*/
+             grid-gap: 2rem;
+         }
+         .item{
+             border: 1px solid rgb(9, 17, 44);
+             background: grey;
+             font-weight: bold;
+             text-align:center;
+             padding: 3rem;
+         }
+
+         /* using grid in main */
+         main{
+             display: grid;
+             grid-template-columns: repeat(2, 2fr);
+             grid-gap: 1rem;
+         }
+
+     </style>
+ </head>
+ <body>
+     <div class="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+
+     </div>
+     <main>
+         <section>
+             <h2>Welcome</h2>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, magni consequatur! Rem eaque aliquam doloremque necessitatibus repellendus veritatis dolores dolore!</p>
+         </section>
+         <aside>
+             <h3>hello sidebar</h3>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium reiciendis illo blanditiis, labore fugiat quam dignissimos ipsum voluptates eum?</p>
+         </aside>
+     </main>
+ </body>
+ </html>
