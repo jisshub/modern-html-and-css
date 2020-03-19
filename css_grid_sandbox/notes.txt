@@ -1,4 +1,11 @@
-grdi-templte-column
+Grid items
+--------
+-- grid items are those item with in grid class
+
+
+grid columns
+----------------------
+grid-templte-column
  -- based on the number of columns - provide the 
     width for each column instead of column count.
 
@@ -21,7 +28,7 @@ sample
         grid-template-columns: auto auto auto auto;
 
         /* using repeat() instead of repeating widrh */
-        /* takes two args - 1. count, 2. column width */
+        /* takes two args - 1. column count, 2. column width */
         grid-template-columns: repeat(4, auto);
 
         /* using fraction units/fr unit for column width */
@@ -33,4 +40,70 @@ sample
         /* space around grids - use grid-gap property*/
         grid-gap: 2rem;
     }
+
+Grid Rows
+---------------
+
+grids are aligned row wise/vertically
+
+
+.grid{
+    display: grid;
+
+    /* grid-template-rows to specify width for each grid in rows wise*/
+    grid-template-rows: 1fr 3fr 4fr 2fr;
+
+    /* grid-auto-rows to style the implicit grids , ie: 
+    grids those with no width specified in grid template rows */
+    grid-auto-rows: 2fr;
+
+    /* using grid-template-columns */
+    grid-template-columns: repeat(3, 2fr);
+
+}
+
+spanning the grid items across rows and columns
+----------------------------------------
+
+/* select a grid item to span across */
+.item:first-child{
+    /* column to start the span */
+    grid-column-start: 1;
+
+    /* column to end span - count the lines in b/w,
+    also border lines to get 4 */
+    grid-column-end: 4;
+
+    /* row to start the span */
+    grid-row-start: 1;
+
+    /* spanning ends at row 3 */
+    grid-row-end: 3;
+}
+-- shorter way of spanning grids 
+
+.item:first-child()
+{
+    /* use grid-column and grid-row property*/
+    /* spanning across columns*/
+    /* start from column1 and span grid to column 4 */
+    grid-column: 1 /span 4;
+
+    /* start from row1 and span grid to row 3 */
+    grid-row: 1 /span 3;
+}
+
+
+/* selecting a specific grid to span*/
+.item:nth-child(12)
+{
+    /* span starts from column 3 and span across 3 columns from the start */
+    grid-column: 3 / span 3;
+    /* span starts from row 5 and then span across 2 rows afterwards  */
+    grid-row: 5 / span 2;
+} 
+
+
+
+
 

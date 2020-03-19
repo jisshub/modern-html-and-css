@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Rows</title>
+    <!-- grids are aligned row wise  -->
+    <style>
+        .grid{
+            display: grid;
+            /* grid-template-rows to specify width for each grid in rows wise*/
+            grid-template-rows: 1fr 3fr 4fr 2fr;
+            /* grid-auto-rows to style the implicit grids , ie: 
+            grids those with no width specified in grid template rows */
+            grid-auto-rows: 2fr;
+            /* using grid-template-columns */
+            grid-template-columns: repeat(3, 2fr);
+
+        }
+        .item{
+            background: grey;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid lightcoral;
+            padding: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+    
+</body>
+</html>

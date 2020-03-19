@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning Grid Items Across Rows and Columnd</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(5, 2fr);
+        }
+        .item{
+            background: #f4f4f4;
+            font-style: italic;
+            font-weight: bold;
+            padding: 2rem;
+            border: 2px seagreen solid;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        /* select a grid item to span across */
+        .item:first-child{
+            /* column to start the span */
+            grid-column-start: 1;
+            /* column to end span - count the lines in b/w,
+            also border lines to get 4 */
+            grid-column-end: 4;
+
+            /* row to start the span */
+            grid-row-start: 1;
+            /* spanning ends at row 3 */
+            grid-row-end: 3;
+
+            /* shorter way of spanning grids */
+            /* use grid-column and grid-row */
+
+            /* spanning across columns*/
+            /* start from column1 and span grid to column 4 */
+            grid-column: 1 /span 4;
+
+            /* start from row1 and span grid to row 3 */
+            grid-row: 1 /span 3;
+        }
+        /* selecting 12th grid */
+        .item:nth-child(12)
+        {
+            /* span starts from column 3 and span across 3 columns from the start */
+            grid-column: 3 / span 3;
+            /* span starts from row 5 and then span across 2 rows afterwards  */
+            grid-row: 5 / span 2;
+        } 
+
+        
+        /* .item:nth-child(11){
+            grid-column: 2 / span 4;
+            grid-row: 5 / span 3;
+        } */
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div>
+        <div class="item">item 11</div>
+        <div class="item">item 12</div>
+        <div class="item">item 13</div>
+        <div class="item">item 14</div>
+        <div class="item">item 15</div>
+        <div class="item">item 16</div>
+        <div class="item">item 17</div>
+        <div class="item">item 18</div>
+        <div class="item">item 19</div>
+        <div class="item">item 20</div>
+
+    
+    </div>
+</body>
+</html>

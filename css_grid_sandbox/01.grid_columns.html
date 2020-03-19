@@ -3,7 +3,7 @@
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>css grids</title>
+     <title>Grid columns</title>
      <style>
          /* style the grid */
          .grid{
@@ -15,7 +15,7 @@
              /* all have same width */
              grid-template-columns: auto auto auto auto;
              /* using repeat() instead of repeating widrh */
-             /* takes two args - 1. count, 2. column width */
+             /* takes two args - 1. column count, 2. column width */
              grid-template-columns: repeat(4, auto);
              /* using fraction units/fr unit for column width */
              grid-template-columns: 2fr 1fr 4fr 3fr;
@@ -35,8 +35,8 @@
          /* using grid in main */
          main{
              display: grid;
-             grid-template-columns: repeat(2, 2fr);
-             grid-gap: 1rem;
+             grid-template-columns: repeat(3, 3fr);
+             grid-gap: .5rem;
          }
 
      </style>
@@ -54,6 +54,16 @@
 
      </div>
      <main>
+         <aside>
+             <nav>
+                 <ul style="list-style: none; padding: 2rem;">
+                     <li><a href="#">Hello</a></li>
+                     <li><a href="#">Hello</a></li>
+                     <li><a href="#">Hello</a></li>
+                     <li><a href="#">Hello</a></li>
+                 </ul>
+             </nav>
+         </aside>
          <section>
              <h2>Welcome</h2>
              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, magni consequatur! Rem eaque aliquam doloremque necessitatibus repellendus veritatis dolores dolore!</p>
@@ -62,6 +72,7 @@
              <h3>hello sidebar</h3>
              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium reiciendis illo blanditiis, labore fugiat quam dignissimos ipsum voluptates eum?</p>
          </aside>
+
      </main>
  </body>
  </html>
