@@ -56,6 +56,35 @@
             padding: 2rem;
             background-color: rgb(126, 199, 175);
         }
+
+        /* adding media queries for responsiveness */
+        @media (max-width: 500px) {
+            .container{
+                display: grid;
+                grid-template-areas:
+                    'header'
+                    'section01'
+                    'sidebar'
+                    'box-1'
+                    'box-2'
+                    'box-3'
+                    'page-ft';
+                    
+            }
+            
+        }
+        @media(max-width: 700px) and (min-width: 501px){
+            .container{
+                display: grid;
+                grid-template-areas: 
+                    'header header'
+                    'section01 section01'
+                    'sidebar sidebar'
+                    'box-1 box-2'
+                    'box-3 box-3'
+                    'page-ft page-ft';
+            }
+        }
     </style>
 </head>
 <body>

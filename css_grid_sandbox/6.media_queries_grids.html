@@ -3,14 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS grids - media queries</title>
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, auto); 
+            grid-gap: 2rem;
+            
+              
+        }
+        .item
+        {
+            text-align:center;
+            border: 1px crimson solid;
+            padding: .5rem;
+            margin: 1.5rem;
+        }
+        /* media queries */
+        @media(max-width: 960px){
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                font-size: 1.2rem;
+            }
+            
+        }
+        @media(max-width: 500px) {
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header id="header">
-        <h1>YTS Movies</h1>  
-    </header>
-    <main id="full-main">
-
-    </main>
-</body>
+    <div class="grid">
+        <div class="item">
+            <h3>Heading 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate possimus! Quaerat error minima voluptatum repudiandae velit ut facere cupiditate!
+            </p>
+        </div>
+        <div class="item">
+            <h3>Heading 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate possimus! Quaerat error minima voluptatum repudiandae velit ut facere cupiditate!
+            </p>
+        </div>
+        <div class="item">
+            <h3>Heading 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate possimus! Quaerat error minima voluptatum repudiandae velit ut facere cupiditate!
+            </p>
+        </div>
+        <div class="item">
+            <h3>Heading 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate possimus! Quaerat error minima voluptatum repudiandae velit ut facere cupiditate!
+            </p>
+        </div>
+            
+    </div>
+    </body>
 </html>
