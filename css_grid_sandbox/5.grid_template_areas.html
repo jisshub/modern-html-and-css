@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            /* header spans across 3 cols */
+            'header header header'
+            /*section spans across 2cols-sidebar spans 1 col */
+            'section01 section01 sidebar'
+            /* box1 spans 1 col - box2 spans 2 cols */
+            'box-1 box-2 box-2'
+            /* box-3 spans entire 3 cols */
+            'box-3 box-3 box-3' 
+            /* footer spans 3 cols */
+            'page-ft page-ft page-ft';
+            /* gap for grids */
+            grid-gap: 2rem;
+            
+
+        }
+
+        /*  assign grid area property for each for spanning precisely */
+        .header{
+            grid-area: header;
+            text-align: center;
+        }
+        .section01{
+            grid-area: section01;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }   
+
+        .box-1{grid-area: box-1}
+        .box-2{grid-area: box-2}
+        .box-3{grid-area: box-3}
+
+        .page-ft{
+            grid-area: page-ft;
+            text-align: center;
+        }
+
+        .header,
+        .section01,
+        .sidebar,
+        .box-1,
+        .box-2,
+        .box-3,
+        .page-ft{
+            border: 1px solid grey;
+            padding: 2rem;
+            background-color: rgb(126, 199, 175);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"><h1>My Website</h1></header>
+        <section class="section01"> 
+            <h3>Welcome To My Site</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis accusantium excepturi cumque error. Commodi, qui earum dignissimos velit sit aliquam nam placeat cumque voluptate natus similique fuga voluptates odit repellendus architecto. Similique, accusantium. Doloremque tempore modi eveniet sed, accusantium veritatis voluptate laborum atque, non consequuntur sapiente adipisci aspernatur, nemo inventore.
+            </p>
+        </section>
+        <aside class="sidebar">
+            <h4>Resources</h4>
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="box-1">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam a reiciendis velit quidem eum non accusantium ad earum iste dignissimos itaque officiis, exercitationem ipsa deleniti omnis voluptatum dolores molestias.</p>
+        </div>
+        <div class="box-2">
+            <h4>Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam consectetur reprehenderit ipsum id possimus praesentium culpa laborum dolorem accusantium, recusandae nulla est laudantium neque hic sunt dolores aperiam. Pariatur.</p>
+        </div>
+        <div class="box-3">
+            <h4>Heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores porro eos veritatis quidem quia quas et velit laborum odio exercitationem, voluptatem voluptates harum mollitia, eveniet consequatur libero amet obcaecati magni.</p>
+        </div>
+        <footer class="page-ft">
+            <p>CopyRight &copy; 2020 | My Website</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
