@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid grey;
+            font-weight: bold;
+        }
+        .grid{
+            display: grid;
+            /* repeat(auto-fit,minmax(min, max)) */
+            /* auto-fit means fit the grid items based on screen size */
+            /* minmax(min, max) - 2 args, 1.min - min size for each grid /*2.max - max size for each grid  */
+            /* this size varies in b/w min and max values while changing screen size */
+            /* if max is smaller than min, then max is ignored and the function is treated as min.  */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* 300px is min, 1fr is max, ie 300px will be the min width a grid can take, and 1fr is max width a grid can take*/
+            /* if minmax(700px, 1fr) -- min > max, so 1fr is ignored,
+            and grids will only  take 1000px */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+    
+</body>
+</html>
