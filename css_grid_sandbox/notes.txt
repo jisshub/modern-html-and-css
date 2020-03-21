@@ -104,6 +104,75 @@ spanning the grid items across rows and columns
 } 
 
 
+auto-fit, minmax(min, max)
+--------------
+
+.grid{
+    display: grid;
+    
+    /* repeat(auto-fit,minmax(min, max)) */
+    
+    /* auto-fit means fit the grid items based on screen size */
+    /* minmax(min, max) - 2 args, 1.min - min size for each grid /*2.max - max size for each grid  */
+    /* this size varies in b/w min and max values while changing screen size */
+    /* if max is smaller than min, then max is ignored and the function is treated as min.  */
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    /* 300px is min, 1fr is max, ie 300px will be the min width a grid can take, and 1fr is max width a grid can take*/
+    /* if minmax(700px, 1fr) -- min > max, so 1fr is ignored,
+        and grids will only  take 1000px */
+}
+
+grid template areas - grid areas
+----------------------------------
+The grid-template-areas property specifies areas within the grid layout.
+
+You can name grid items by using the grid-area property, and then reference to the name in the grid-template-areas property.
 
 
+.container{
+    display: grid;
 
+    grid-template-areas: 
+    /* header spans across 3 cols */
+    'header header header'
+    
+    /*section spans across 2cols-sidebar spans 1 col */
+    'section01 section01 sidebar'
+    
+    /* box1 spans 1 col - box2 spans 2 cols */
+    'box-1 box-2 box-2'
+    
+    /* box-3 spans entire 3 cols */
+    'box-3 box-3 box-3' 
+    
+    /* footer spans 3 cols */
+    'page-ft page-ft page-ft';
+    
+    /* gap for grids */
+    grid-gap: 2rem;
+    
+
+}
+
+/*  assign grid area property for each for spanning precisely */
+.header{
+    grid-area: header;
+    text-align: center;
+}
+.section01{
+    grid-area: section01;
+}
+.sidebar{
+    grid-area: sidebar;
+}   
+
+.box-1{grid-area: box-1}
+.box-2{grid-area: box-2}
+.box-3{grid-area: box-3}
+
+.page-ft{
+    grid-area: page-ft;
+    text-align: center;
+}
