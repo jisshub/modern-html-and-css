@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JWatch | Movies Download</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'sidebar-1 main-content main-content main-content sidebar-2'
+            'sidebar-1 box-1 box-2 box-3 sidebar-2'
+            'footer footer footer footer footer';
+            grid-gap: 1rem;
+        }
+        .header{
+            grid-area: header;
+        }
+        .main-content{
+            grid-area: main-content;
+        }
+        .sidebar-1{
+            grid-area: sidebar-1;
+        }
+        .box-1{grid-area: box-1;}
+        .box-2{grid-area: box-2;}
+        .box-3{grid-area: box-3;}
+
+        .sidebar-2{
+            grid-area: sidebar-2;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to JWatch</h1>
+        </header>
+        <section class="main-content">
+            <h3>Wtch Your Favourite Movies Here!</h3>        
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea hic suscipit accusamus inventore nemo placeat doloribus alias pariatur dolore.</p>
+        </section>
+        
+        <aside class="sidebar-1">
+            <h3>Select by Genre</h3>
+            <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">SciFi</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Crime</a></li>
+
+            </ul>
+        </aside>
+        <div class="box-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, magnam quibusdam temporibus nam assumenda nostrum doloribus voluptatum odio cupiditate earum.
+        </div>
+        <div class="box-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia distinctio illum fugiat! Perferendis, ducimus dignissimos vel harum doloremque voluptatibus.
+        </div>
+        <div class="box-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio ipsa eaque magnam architecto adipisci obcaecati quis, velit non harum!
+        </div>
+        <aside class="sidebar-2">
+            <h3>Search By Year</h3>
+            <ul>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2020</a></li>
+            </ul>
+        </aside>
+
+        <footer class="footer">
+            <p>CopyRight &copy; 2020 &nbsp; | JWatch Movies</p>
+        </footer>
+
+    </div>
     
 </body>
 </html>
