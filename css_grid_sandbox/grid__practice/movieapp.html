@@ -54,7 +54,7 @@
 
         }
         /* media queries */
-        @media(max-width: 800px){
+        @media(max-width: 200px){
             .container{
                 grid-template-areas: 
                 'header header header'
@@ -66,9 +66,18 @@
                 'box-3 box-3 box-3'
                 'footer footer footer'
                 ;
+            }                        
+        }
+        @media(max-width: 960px) and (min-width: 700px) {
+            .container{
+                grid-template-areas:
+                'header header header header'
+                'main-content main-content main-content main-content'
+                'sidebar-1 sidebar-1 sidebar-2 sidebar-2'
+                'box-1 box-1 box-2 box-2' 
+                'box-3 box-3 box-3 box-3'
+                'footer footer footer footer';
             }
-            
-            
         }
     </style>
 </head>
