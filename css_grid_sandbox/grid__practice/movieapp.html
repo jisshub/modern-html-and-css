@@ -16,24 +16,60 @@
         }
         .header{
             grid-area: header;
+            text-align: center;
+            padding: 1.2rem;
         }
+        
         .main-content{
             grid-area: main-content;
+            padding: 1.5rem;
         }
-        .sidebar-1{
+        #sidebar-1{
             grid-area: sidebar-1;
         }
-        .box-1{grid-area: box-1;}
-        .box-2{grid-area: box-2;}
-        .box-3{grid-area: box-3;}
+        #box-1{grid-area: box-1;padding: 4rem;}
+        #box-2{grid-area: box-2;padding: 4rem;}
+        #box-3{grid-area: box-3;padding: 4rem;}
 
-        .sidebar-2{
+        #sidebar-2{
             grid-area: sidebar-2;
         }
         .footer{
             grid-area: footer;
+            text-align: center;
+            padding: 1.5rem;
         }
+        .header,
+        .main-content,
+        #sidebar-1,
+        #sidebar-2,
+        .footer,
+        .box
+        {
+            background: rgba(179, 56, 80, 0.432);
+            
+        }
+        .sidebar{
+            padding: .8rem;
 
+        }
+        /* media queries */
+        @media(max-width: 800px){
+            .container{
+                grid-template-areas: 
+                'header header header'
+                'main-content main-content main-content'
+                'sidebar-1 sidebar-1 sidebar-1'
+                'sidebar-2 sidebar-2 sidebar-2'
+                'box-1 box-1 box-1'
+                'box-2 box-2 box-2'
+                'box-3 box-3 box-3'
+                'footer footer footer'
+                ;
+            }
+            
+            
+        }
     </style>
 </head>
 <body>
@@ -46,7 +82,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea hic suscipit accusamus inventore nemo placeat doloribus alias pariatur dolore.</p>
         </section>
         
-        <aside class="sidebar-1">
+        <aside id="sidebar-1" class="sidebar">
             <h3>Select by Genre</h3>
             <ul>
                 <li><a href="#">Action</a></li>
@@ -60,16 +96,16 @@
 
             </ul>
         </aside>
-        <div class="box-1">
+        <div id="box-1" class="box">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, magnam quibusdam temporibus nam assumenda nostrum doloribus voluptatum odio cupiditate earum.
-        </div>
-        <div class="box-2">
+        </div> 
+        <div id="box-2" class="box">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia distinctio illum fugiat! Perferendis, ducimus dignissimos vel harum doloremque voluptatibus.
-        </div>
-        <div class="box-3">
+        </div> 
+        <div id="box-3" class="box">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio ipsa eaque magnam architecto adipisci obcaecati quis, velit non harum!
         </div>
-        <aside class="sidebar-2">
+        <aside id="sidebar-2" class="sidebar">
             <h3>Search By Year</h3>
             <ul>
                 <li><a href="#">2020</a></li>
