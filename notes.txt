@@ -589,6 +589,18 @@ each vh is a slice .
 if vh is 1. then it is slice 1.
 so, there is a total of 100 slice in a browser
 
+min-height: 100vh // takes 100 slice vertically
+
+Eg: 
+	element{
+		display: flex;
+		justify-content: center; // aligned at center horizontally
+		align-items: center;  // aligned at center vetically
+  		min-height: 100vh; 
+	}
+
+here the element will appar at center of page
+
 
 
 --view port width or vw
