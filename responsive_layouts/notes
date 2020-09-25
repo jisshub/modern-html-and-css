@@ -27,9 +27,20 @@ syntax:
 }
 max-width is usually setas 500 px incase of smartphones. since most of phones hav width < 500.
 
-when the page hits the given max-width its background color changes to red.
+**the page follows the specified styling until it reaches given value**
 
-we can also min-width instead of max-width. it does the opp. of the max-width.
+- using min-width:
+
+@media(min-width: value)
+{
+	selector
+	{
+ 		property: value
+	}
+}
+
+**the page follows the specified styling after its width touches given value. until then it follows default style.**
+
 ie. page will be red bg until it hits 500px. and when it hits 500px, it changes to default bg color.
 
 
