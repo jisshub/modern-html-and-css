@@ -39,9 +39,28 @@ max-width is usually setas 500 px incase of smartphones. since most of phones ha
 	}
 }
 
-**the page follows the specified styling after its width touches given value. until then it follows default style.**
+**the page follows the specified styling once its width touches given value. until then it follows default style.**
 
-ie. page will be red bg until it hits 500px. and when it hits 500px, it changes to default bg color.
+**Example**
+
+```css
+@media (max-width: 700px) {
+  h1 {
+    color: red;
+  }
+}
+```
+- here h1 color is red until page is 700px
+
+
+```css
+@media (max-width: 700px) {
+  h1 {
+    color: red;
+  }
+}
+```
+- here h1 color will be red once page width reaches 700px.
 
 
 we can set the media attributes in external links of css.
